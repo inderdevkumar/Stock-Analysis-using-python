@@ -1,0 +1,267 @@
+2025-12-31 17:39:43,037 - INFO - 
+
+============ __init__ ==========
+2025-12-31 17:39:43,037 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\dec_2025\31_dec
+2025-12-31 17:39:43,037 - INFO - 
+
+================ pre_open_market ===========
+2025-12-31 17:39:43,042 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:39:43,830 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 32787
+2025-12-31 17:39:44,010 - INFO - Index(['Symbol', 'metadata.identifier', 'metadata.series', 'metadata.purpose',
+       'metadata.lastPrice', 'metadata.change', 'metadata.pChange',
+       'metadata.previousClose', 'metadata.finalQuantity',
+       'metadata.totalTurnover', 'metadata.marketCap', 'metadata.yearHigh',
+       'metadata.yearLow', 'metadata.iep', 'detail.preOpenMarket.preopen',
+       'detail.preOpenMarket.ato.totalBuyQuantity',
+       'detail.preOpenMarket.ato.totalSellQuantity',
+       'detail.preOpenMarket.IEP', 'detail.preOpenMarket.totalTradedVolume',
+       'detail.preOpenMarket.finalPrice', 'detail.preOpenMarket.finalQuantity',
+       'detail.preOpenMarket.lastUpdateTime',
+       'detail.preOpenMarket.totalSellQuantity',
+       'detail.preOpenMarket.totalBuyQuantity',
+       'detail.preOpenMarket.atoBuyQty', 'detail.preOpenMarket.atoSellQty',
+       'detail.preOpenMarket.Change', '%chng',
+       'detail.preOpenMarket.prevClose'],
+      dtype='object')
+2025-12-31 17:39:44,010 - INFO -   metadata.symbol  detail.preOpenMarket.perChange
+0        JSWSTEEL                            3.99
+1      PREMIERENE                            3.28
+2            SAIL                            2.89
+3      BHARATFORG                            2.50
+4       TATASTEEL                            2.39
+2025-12-31 17:39:46,045 - INFO - 
+
+================ oi_spurts ===========
+2025-12-31 17:39:46,045 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:39:46,751 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 12342
+2025-12-31 17:39:46,767 - INFO - Index(['Symbol', 'latestOI', 'prevOI', 'changeInOI', '%chng in OI', 'volume',
+       'futValue', 'optValue', 'total', 'premValue', 'underlyingValue'],
+      dtype='object')
+2025-12-31 17:39:46,767 - INFO -        symbol  avgInOI
+0    FINNIFTY   184.71
+1  SAMMAANCAP    50.17
+2       NIFTY    45.35
+3  MIDCPNIFTY    42.10
+4         OIL    36.81
+2025-12-31 17:39:48,793 - INFO - 
+
+================ each_sectors_stocks ===========
+2025-12-31 17:39:48,793 - INFO - 
+
+================ sectors_heatmap ===========
+2025-12-31 17:39:48,793 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:39:49,676 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1374
+2025-12-31 17:39:49,676 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2025-12-31 17:39:49,676 - INFO -                index  pChange
+0         NIFTY AUTO     1.08
+1         NIFTY BANK     0.69
+2  NIFTY FIN SERVICE     0.84
+3  NIFTY FINSRV25 50     0.76
+4         NIFTY FMCG     0.80
+2025-12-31 17:39:49,688 - INFO - Sectors for long: ['NIFTY AUTO' 'NIFTY FIN SERVICE' 'NIFTY FINSRV25 50' 'NIFTY FMCG'
+ 'NIFTY MEDIA' 'NIFTY METAL' 'NIFTY PHARMA' 'NIFTY PSU BANK'
+ 'NIFTY REALTY' 'NIFTY PVT BANK' 'NIFTY CONSR DURBL' 'NIFTY OIL AND GAS'
+ 'NIFTY MIDSML HLTH' 'NIFTY CHEMICALS' 'NIFTY500 HEALTH'
+ 'NIFTY FINSEREXBNK' 'NIFTY MS FIN SERV'], for short: []
+2025-12-31 17:39:51,705 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:39:52,419 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20AUTO HTTP/1.1" 200 927
+2025-12-31 17:39:52,419 - INFO -       symbol pChange
+0   TVSMOTOR    2.35
+1    TIINDIA    1.85
+2  EICHERMOT    1.69
+3   BOSCHLTD    1.60
+4       TMPV    1.56
+2025-12-31 17:39:56,719 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FIN%20SERVICE HTTP/1.1" 200 1149
+2025-12-31 17:39:56,736 - INFO -        symbol pChange
+0   KOTAKBANK    2.34
+1     SBICARD    2.21
+2         BSE    2.18
+3  ICICIPRULI    1.89
+4    AXISBANK    1.82
+2025-12-31 17:39:59,197 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FINSRV25%2050 HTTP/1.1" 200 1149
+2025-12-31 17:39:59,197 - INFO -        symbol pChange
+0   KOTAKBANK    2.34
+1     SBICARD    2.21
+2         BSE    2.18
+3  ICICIPRULI    1.89
+4    AXISBANK    1.82
+2025-12-31 17:40:01,654 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FMCG HTTP/1.1" 200 923
+2025-12-31 17:40:01,654 - INFO -        symbol pChange
+0      MARICO    1.57
+1    UNITDSPR    1.47
+2       DABUR    1.35
+3  HINDUNILVR    1.17
+4         VBL    1.15
+2025-12-31 17:40:06,258 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 674
+2025-12-31 17:40:06,271 - INFO -       symbol pChange
+0     NAZARA    3.72
+1  TIPSMUSIC    2.57
+2    PVRINOX    1.96
+3      SUNTV    1.88
+4  NETWORK18    1.26
+2025-12-31 17:40:08,604 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20METAL HTTP/1.1" 200 929
+2025-12-31 17:40:08,616 - INFO -        symbol pChange
+0    JSWSTEEL    4.88
+1        SAIL    4.31
+2     WELCORP    3.04
+3  JINDALSTEL    2.81
+4    LLOYDSME    2.44
+2025-12-31 17:40:10,973 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PHARMA HTTP/1.1" 200 1151
+2025-12-31 17:40:10,980 - INFO -        symbol pChange
+0  WOCKPHARMA    5.15
+1       GLAND    3.44
+2     IPCALAB    2.23
+3     MANKIND    1.78
+4  AJANTPHARM    1.73
+2025-12-31 17:40:13,281 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 755
+2025-12-31 17:40:13,281 - INFO -       symbol pChange
+0    INDIANB    3.44
+1   MAHABANK    2.63
+2    UCOBANK    2.05
+3        PSB    1.93
+4  BANKINDIA    1.68
+2025-12-31 17:40:15,484 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 687
+2025-12-31 17:40:15,484 - INFO -        symbol pChange
+0    PRESTIGE    1.78
+1     BRIGADE    1.74
+2  GODREJPROP    1.43
+3  OBEROIRLTY    1.36
+4         DLF    1.23
+2025-12-31 17:40:17,934 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PVT%20BANK HTTP/1.1" 200 688
+2025-12-31 17:40:17,943 - INFO -        symbol pChange
+0  INDUSINDBK    2.85
+1   KOTAKBANK    2.34
+2     RBLBANK    2.08
+3    AXISBANK    1.82
+4     YESBANK    1.17
+2025-12-31 17:40:22,197 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CONSR%20DURBL HTTP/1.1" 200 910
+2025-12-31 17:40:22,226 - INFO -        symbol pChange
+0        PGEL    2.58
+1       DIXON    2.50
+2       TITAN    1.86
+3  CENTURYPLY    1.85
+4       AMBER    1.84
+2025-12-31 17:40:24,436 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20OIL%20AND%20GAS HTTP/1.1" 200 907
+2025-12-31 17:40:24,436 - INFO -       symbol pChange
+0  HINDPETRO    6.56
+1  GUJGASLTD    5.63
+2       GSPL    4.26
+3       BPCL    3.78
+4        OIL    3.29
+2025-12-31 17:40:26,682 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MIDSML%20HLTH HTTP/1.1" 200 1598
+2025-12-31 17:40:26,700 - INFO -        symbol pChange
+0  WOCKPHARMA    5.15
+1       GLAXO    3.85
+2       GLAND    3.44
+3          NH    3.28
+4     POLYMED    3.03
+2025-12-31 17:40:29,091 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CHEMICALS HTTP/1.1" 200 1157
+2025-12-31 17:40:29,105 - INFO -        symbol pChange
+0  DEEPAKFERT    6.70
+1        PCBL    5.80
+2    TATACHEM    2.48
+3  CHAMBLFERT    2.19
+4  PIDILITIND    2.15
+2025-12-31 17:40:31,555 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY500%20HEALTH HTTP/1.1" 200 2506
+2025-12-31 17:40:31,559 - INFO -        symbol pChange
+0  WOCKPHARMA    5.15
+1       GLAXO    3.85
+2       GLAND    3.44
+3  METROPOLIS    3.35
+4          NH    3.28
+2025-12-31 17:40:33,885 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FINSEREXBNK HTTP/1.1" 200 1607
+2025-12-31 17:40:33,888 - INFO -     symbol pChange
+0      LTF    3.45
+1     MFSL    2.56
+2  SBICARD    2.21
+3      BSE    2.18
+4      MCX    2.17
+2025-12-31 17:40:36,128 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MS%20FIN%20SERV HTTP/1.1" 200 1632
+2025-12-31 17:40:36,128 - INFO -        symbol pChange
+0         LTF    3.45
+1     INDIANB    3.44
+2  INDUSINDBK    2.85
+3        MFSL    2.56
+4     SBICARD    2.21
+2025-12-31 17:40:40,156 - INFO - 
+
+================ top_gainers ===========
+2025-12-31 17:40:40,156 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:40:41,034 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-variations?index=gainers HTTP/1.1" 200 6519
+2025-12-31 17:40:41,041 - INFO - Index(['Symbol', 'series', 'open_price', 'high_price', 'low_price', 'ltp',
+       'prev_price', 'net_price', 'trade_quantity', 'turnover', 'market_type',
+       'ca_ex_dt', 'ca_purpose', '%chng'],
+      dtype='object')
+2025-12-31 17:40:41,041 - INFO -       symbol  perChange
+0  HINDPETRO       6.56
+1   JSWSTEEL       4.88
+2       SAIL       4.31
+3       BPCL       3.78
+4        LTF       3.45
+2025-12-31 17:40:43,061 - INFO - 
+
+================ top_loosers ===========
+2025-12-31 17:40:43,063 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2025-12-31 17:40:43,739 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-variations?index=loosers HTTP/1.1" 200 4391
+2025-12-31 17:40:43,750 - INFO - Index(['Symbol', 'series', 'open_price', 'high_price', 'low_price', 'ltp',
+       'prev_price', 'net_price', 'trade_quantity', 'turnover', 'market_type',
+       'ca_ex_dt', 'ca_purpose', '%chng'],
+      dtype='object')
+2025-12-31 17:40:43,750 - INFO -        symbol  perChange
+0        IDEA     -11.53
+1    HINDZINC      -2.08
+2      SWIGGY      -1.99
+3   POLICYBZR      -1.55
+4  PREMIERENE      -1.18
+2025-12-31 17:40:56,051 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\dec_2025\31_dec' is ['intraday_logs.log', 'MW-NIFTY-NIFTY500_HEALTH.csv', 'MW-NIFTY-NIFTY_AUTO.csv', 'MW-NIFTY-NIFTY_CHEMICALS.csv', 'MW-NIFTY-NIFTY_CONSR_DURBL.csv', 'MW-NIFTY-NIFTY_FINSEREXBNK.csv', 'MW-NIFTY-NIFTY_FINSRV25_50.csv', 'MW-NIFTY-NIFTY_FIN_SERVICE.csv', 'MW-NIFTY-NIFTY_FMCG.csv', 'MW-NIFTY-NIFTY_MEDIA.csv', 'MW-NIFTY-NIFTY_METAL.csv', 'MW-NIFTY-NIFTY_MIDSML_HLTH.csv', 'MW-NIFTY-NIFTY_MS_FIN_SERV.csv', 'MW-NIFTY-NIFTY_OIL_AND_GAS.csv', 'MW-NIFTY-NIFTY_PHARMA.csv', 'MW-NIFTY-NIFTY_PSU_BANK.csv', 'MW-NIFTY-NIFTY_PVT_BANK.csv', 'MW-NIFTY-NIFTY_REALTY.csv', 'MW-Pre-Open-Market.csv', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-loosers-FOSec.csv']
+2025-12-31 17:40:56,087 - INFO - Copied: T20-GL-gainers-FOSecP.csv
+2025-12-31 17:40:56,106 - INFO - Copied: T20-GL-loosers-FOSecP.csv
+2025-12-31 17:40:56,118 - INFO - 
+
+=============   test_stocks_for_long =========== 
+2025-12-31 17:40:56,597 - INFO -          Symbol  %chng                 From CSV  %chng in OI
+0          SAIL   5.38    T20-GL-gainers-FOSecP        10.48
+1          SAIL   4.31     T20-GL-gainers-FOSec        10.48
+2          SAIL   2.89       MW-Pre-Open-Market        10.48
+3          SAIL   4.31     MW-NIFTY-NIFTY_METAL        10.48
+4    NATIONALUM   5.35    T20-GL-gainers-FOSecP        12.00
+..          ...    ...                      ...          ...
+139         PNB   1.08  MW-NIFTY-NIFTY_PSU_BANK         6.33
+140  BANKBARODA   0.99  MW-NIFTY-NIFTY_PSU_BANK         7.11
+141    PRESTIGE   1.78    MW-NIFTY-NIFTY_REALTY         5.15
+142  GODREJPROP   1.43    MW-NIFTY-NIFTY_REALTY         6.25
+143  OBEROIRLTY   1.36    MW-NIFTY-NIFTY_REALTY         5.22
+
+[144 rows x 4 columns]
+2025-12-31 17:40:58,687 - INFO - 
+
+=============   test_stocks_for_short =========== 
+2025-12-31 17:40:58,884 - INFO -         Symbol  %chng                    From CSV  %chng in OI
+0        AMBER  -3.20       T20-GL-loosers-FOSecP         7.59
+1      MAZDOCK  -2.49       T20-GL-loosers-FOSecP         4.45
+2        IRCTC  -2.19       T20-GL-loosers-FOSecP         6.37
+3     INOXWIND  -2.14       T20-GL-loosers-FOSecP         5.25
+4    POLICYBZR  -2.13       T20-GL-loosers-FOSecP         8.38
+5    POLICYBZR  -1.55        T20-GL-loosers-FOSec         8.38
+6    POLICYBZR  -1.55  MW-NIFTY-NIFTY_FINSEREXBNK         8.38
+7    POLICYBZR  -1.55  MW-NIFTY-NIFTY_MS_FIN_SERV         8.38
+8         RVNL  -2.07       T20-GL-loosers-FOSecP         8.47
+9         RVNL  -0.87        T20-GL-loosers-FOSec         8.47
+10   TATAELXSI  -1.98       T20-GL-loosers-FOSecP         5.81
+11   EICHERMOT  -1.92       T20-GL-loosers-FOSecP         4.43
+12     SYNGENE  -1.91       T20-GL-loosers-FOSecP         4.12
+13        CDSL  -1.87       T20-GL-loosers-FOSecP         4.97
+14    KPITTECH  -1.80       T20-GL-loosers-FOSecP        14.41
+15  TATACONSUM  -1.79       T20-GL-loosers-FOSecP         4.87
+16        PGEL  -1.75       T20-GL-loosers-FOSecP        12.02
+17    TATATECH  -1.72       T20-GL-loosers-FOSecP         4.90
+18    ANGELONE  -1.71       T20-GL-loosers-FOSecP        10.26
+19        IDEA -11.53        T20-GL-loosers-FOSec        19.87
+20    HINDZINC  -2.08        T20-GL-loosers-FOSec        10.13
+21    HINDZINC  -1.01          MW-Pre-Open-Market        10.13
+22    HINDZINC  -2.08        MW-NIFTY-NIFTY_METAL        10.13
+23         TCS  -1.13        T20-GL-loosers-FOSec        14.63
+24    KFINTECH  -0.91        T20-GL-loosers-FOSec         9.04
+25       TECHM  -0.85        T20-GL-loosers-FOSec         8.90

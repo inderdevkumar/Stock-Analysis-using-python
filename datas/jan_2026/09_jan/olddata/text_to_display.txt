@@ -1,0 +1,58 @@
+For LONG
+, Opperunities can be here:   {'SBILIFE': 6, 'INDUSTOWER': 4, 'ETERNAL': 1}
+
+For SHORT
+, Opperunities can be here:   {'CIPLA': 4, 'TIINDIA': 3, 'HINDUNILVR': 3, 'EICHERMOT': 2, 'BHARTIARTL': 1, 'INDIGO': 1, 'CUMMINSIND': 1}
+
+For file=> MW-NIFTY-ST-NIFTY500_HEALTH.csv:   min= -4.68 and max= 1.7
+
+For file=> MW-NIFTY-ST-NIFTY_AUTO.csv:   min= -3.82 and max= -0.4
+
+For file=> MW-NIFTY-ST-NIFTY_BANK.csv:   min= -3.4 and max= 1.75
+
+For file=> MW-NIFTY-ST-NIFTY_CHEMICALS.csv:   min= -5.59 and max= 1.22
+
+For file=> MW-NIFTY-ST-NIFTY_CONSR_DURBL.csv:   min= -2.92 and max= 1.85
+
+For file=> MW-NIFTY-ST-NIFTY_FINSEREXBNK.csv:   min= -3.75 and max= 0.53
+
+For file=> MW-NIFTY-ST-NIFTY_FINSRV25_50.csv:   min= -3.75 and max= 0.53
+
+For file=> MW-NIFTY-ST-NIFTY_FIN_SERVICE.csv:   min= -3.75 and max= 0.53
+
+For file=> MW-NIFTY-ST-NIFTY_FMCG.csv:   min= -3.99 and max= -0.22
+
+For file=> MW-NIFTY-ST-NIFTY_HEALTHCARE.csv:   min= -4.68 and max= 1.7
+
+For file=> MW-NIFTY-ST-NIFTY_IT.csv:   min= -3.29 and max= -0.29
+
+For file=> MW-NIFTY-ST-NIFTY_MEDIA.csv:   min= -2.73 and max= 1.12
+
+For file=> MW-NIFTY-ST-NIFTY_METAL.csv:   min= -6.35 and max= -1.84
+
+For file=> MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv:   min= -4.68 and max= 1.7
+
+For file=> MW-NIFTY-ST-NIFTY_MS_FIN_SERV.csv:   min= -4.29 and max= 1.75
+
+For file=> MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv:   min= -4.33 and max= 2.31
+
+For file=> MW-NIFTY-ST-NIFTY_OIL_AND_GAS.csv:   min= -5.4 and max= 0.04
+
+For file=> MW-NIFTY-ST-NIFTY_PHARMA.csv:   min= -4.68 and max= 1.7
+
+For file=> MW-NIFTY-ST-NIFTY_PSU_BANK.csv:   min= -4.12 and max= -0.95
+
+For file=> MW-NIFTY-ST-NIFTY_REALTY.csv:   min= -8.18 and max= 2.94
+
+For file=> MW-Pre-Open-Market.csv:   min= -1.82 and max= 1.59
+
+For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.15 and max= 157.8
+
+For file=> T20-GL-gainers-FOSec.csv:   min= 0.5 and max= 1.85
+
+For file=> T20-GL-gainers-FOSecP.csv:   min= 0.36 and max= 8.45
+
+For file=> T20-GL-loosers-FOSec.csv:   min= -8.78 and max= -0.39
+
+For file=> T20-GL-loosers-FOSecP.csv:   min= -3.78 and max= -0.36
+

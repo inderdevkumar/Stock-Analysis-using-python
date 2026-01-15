@@ -1,0 +1,168 @@
+2026-01-02 07:36:40,700 - INFO - 
+
+============ __init__ ==========
+2026-01-02 07:36:40,700 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\02_jan
+2026-01-02 07:36:40,702 - INFO - 
+
+================ pre_open_market ===========
+2026-01-02 07:36:40,711 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-02 07:36:41,209 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 None
+2026-01-02 07:36:41,354 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-02 07:36:41,354 - INFO -    Symbol  %chng
+0    IDEA   4.09
+1     PFC   0.98
+2  RECLTD   0.90
+3   IREDA   0.79
+4   HUDCO   0.71
+2026-01-02 07:36:43,417 - INFO - 
+
+================ oi_spurts ===========
+2026-01-02 07:36:43,428 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-02 07:36:44,194 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 12413
+2026-01-02 07:36:44,201 - INFO - Index(['Symbol', '%chng in OI'], dtype='object')
+2026-01-02 07:36:44,201 - INFO -        Symbol  %chng in OI
+0         ITC       105.31
+1      SWIGGY        85.34
+2  BAJAJHLDNG        28.59
+3    FINNIFTY        22.58
+4       NIFTY        18.60
+2026-01-02 07:36:46,227 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-02 07:36:46,227 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-02 07:36:46,227 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-02 07:36:46,637 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1409
+2026-01-02 07:36:46,637 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-02 07:36:46,637 - INFO -                index  pChange
+0         NIFTY AUTO     1.03
+1         NIFTY BANK     0.22
+2  NIFTY FIN SERVICE     0.19
+3  NIFTY FINSRV25 50     0.24
+4         NIFTY FMCG    -3.17
+2026-01-02 07:36:46,653 - INFO - Sectors for long: ['NIFTY AUTO' 'NIFTY IT' 'NIFTY METAL' 'NIFTY PSU BANK' 'NIFTY REALTY'
+ 'NIFTY MS IT TELCM'], for short: ['NIFTY FMCG']
+2026-01-02 07:36:48,656 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-02 07:36:49,032 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20AUTO HTTP/1.1" 200 937
+2026-01-02 07:36:49,040 - INFO -        Symbol %chng
+0    ASHOKLEY  3.24
+1  BAJAJ-AUTO  2.59
+2   MOTHERSON  2.18
+3    TVSMOTOR  2.01
+4         M&M  1.23
+2026-01-02 07:36:57,213 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FMCG HTTP/1.1" 200 935
+2026-01-02 07:36:57,213 - INFO -       Symbol %chng
+0   GODREJCP  1.42
+1     MARICO  1.20
+2  PATANJALI  1.04
+3     COLPAL  0.88
+4  NESTLEIND  0.31
+2026-01-02 07:36:59,448 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20IT HTTP/1.1" 200 664
+2026-01-02 07:36:59,448 - INFO -     Symbol %chng
+0    WIPRO  1.52
+1  MPHASIS  1.03
+2    TECHM  1.01
+3     LTIM  0.90
+4     INFY  0.87
+2026-01-02 07:37:03,731 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20METAL HTTP/1.1" 200 917
+2026-01-02 07:37:03,745 - INFO -        Symbol %chng
+0   APLAPOLLO  2.93
+1    LLOYDSME  1.87
+2         JSL  1.41
+3  JINDALSTEL  1.27
+4  HINDCOPPER  1.00
+2026-01-02 07:37:07,936 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 755
+2026-01-02 07:37:07,952 - INFO -        Symbol %chng
+0   BANKINDIA  2.61
+1    MAHABANK  2.55
+2  BANKBARODA  1.86
+3         PSB  0.79
+4   CENTRALBK  0.53
+2026-01-02 07:37:10,120 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 677
+2026-01-02 07:37:10,136 - INFO -        Symbol %chng
+0  OBEROIRLTY  1.76
+1    ANANTRAJ  1.22
+2       LODHA  1.14
+3     BRIGADE  1.13
+4  GODREJPROP  0.64
+2026-01-02 07:37:30,418 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MS%20IT%20TELCM HTTP/1.1" 200 1141
+2026-01-02 07:37:30,427 - INFO -        Symbol %chng
+0        IDEA  8.09
+1  INDUSTOWER  3.88
+2        HFCL  1.70
+3     MPHASIS  1.03
+4  SONATSOFTW  0.60
+2026-01-02 07:37:32,442 - INFO - 
+
+================ gainers_loosers ===========
+2026-01-02 07:37:32,442 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-02 07:37:33,140 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-stocksTraded HTTP/1.1" 200 None
+2026-01-02 07:37:33,423 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-02 07:37:33,424 - INFO -        Symbol  %chng
+0         ITC  -9.69
+1        IDEA   8.09
+2   KIRIINDUS  -6.69
+3  HINDCOPPER   1.00
+4  GODFRYPHLP -17.17
+2026-01-02 07:37:46,663 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\02_jan' is ['intraday_logs.log', 'MW-NIFTY-NIFTY_AUTO.csv', 'MW-NIFTY-NIFTY_FMCG.csv', 'MW-NIFTY-NIFTY_IT.csv', 'MW-NIFTY-NIFTY_METAL.csv', 'MW-NIFTY-NIFTY_MS_IT_TELCM.csv', 'MW-NIFTY-NIFTY_PSU_BANK.csv', 'MW-NIFTY-NIFTY_REALTY.csv', 'MW-Pre-Open-Market.csv', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-loosers-FOSec.csv']
+2026-01-02 07:37:46,764 - INFO - Copied: T20-GL-gainers-FOSecP.csv
+2026-01-02 07:37:46,772 - INFO - Copied: T20-GL-loosers-FOSecP.csv
+2026-01-02 07:37:46,772 - INFO - 
+
+=============   test_stocks_for_long =========== 
+2026-01-02 07:37:46,987 - INFO -         Symbol  %chng               From CSV  %chng in OI
+0         BPCL   3.78  T20-GL-gainers-FOSecP         5.80
+1         BPCL   0.63     MW-Pre-Open-Market         5.80
+2   SAMMAANCAP   3.30  T20-GL-gainers-FOSecP         6.03
+3   SAMMAANCAP   0.38     MW-Pre-Open-Market         6.03
+4   TORNTPOWER   3.07  T20-GL-gainers-FOSecP         4.81
+..         ...    ...                    ...          ...
+73        TMPV   0.41     MW-Pre-Open-Market         4.55
+74        TMPV   0.33    MW-NIFTY-NIFTY_AUTO         4.55
+75       DMART   0.33     MW-Pre-Open-Market         8.65
+76     CGPOWER   0.32     MW-Pre-Open-Market         6.12
+77  HINDUNILVR   0.31    MW-NIFTY-NIFTY_FMCG         5.01
+
+[78 rows x 4 columns]
+2026-01-02 07:37:48,481 - INFO - 
+
+=============   test_stocks_for_short =========== 
+2026-01-02 07:37:48,675 - INFO -         Symbol  %chng                    From CSV  %chng in OI
+0         IDEA -11.53       T20-GL-loosers-FOSecP         5.01
+1       SWIGGY  -1.99       T20-GL-loosers-FOSecP        85.34
+2    POLICYBZR  -1.55       T20-GL-loosers-FOSecP         5.44
+3    POLICYBZR  -1.23        T20-GL-loosers-FOSec         5.44
+4   PREMIERENE  -1.18       T20-GL-loosers-FOSecP        16.09
+5          ITC  -9.69        T20-GL-loosers-FOSec       105.31
+6          ITC  -9.69         MW-NIFTY-NIFTY_FMCG       105.31
+7   BAJFINANCE  -1.13        T20-GL-loosers-FOSec         6.83
+8       KAYNES  -1.78        T20-GL-loosers-FOSec         8.83
+9          MCX  -1.09        T20-GL-loosers-FOSec         5.50
+10        BPCL  -0.78        T20-GL-loosers-FOSec         5.80
+11       DMART  -1.80        T20-GL-loosers-FOSec         8.65
+12     CGPOWER  -1.37        T20-GL-loosers-FOSec         6.12
+13    UNITDSPR  -2.65        T20-GL-loosers-FOSec        11.89
+14    UNITDSPR  -2.65         MW-NIFTY-NIFTY_FMCG        11.89
+15        ONGC  -1.03        T20-GL-loosers-FOSec         9.28
+16       IREDA  -0.54        T20-GL-loosers-FOSec         5.92
+17  TATACONSUM  -1.57        T20-GL-loosers-FOSec         5.46
+18  TATACONSUM  -1.57         MW-NIFTY-NIFTY_FMCG         5.46
+19    DIVISLAB  -0.73        T20-GL-loosers-FOSec         4.39
+20     PAGEIND  -0.97        T20-GL-loosers-FOSec         4.92
+21  SAMMAANCAP  -0.93        T20-GL-loosers-FOSec         6.03
+22   BRITANNIA  -0.53        T20-GL-loosers-FOSec         6.69
+23   BRITANNIA  -0.53         MW-NIFTY-NIFTY_FMCG         6.69
+24     DRREDDY  -1.53        T20-GL-loosers-FOSec        12.84
+25    JUBLFOOD  -0.91        T20-GL-loosers-FOSec         4.57
+26     ICICIGI  -0.41        T20-GL-loosers-FOSec         4.08
+27       DABUR  -0.80        T20-GL-loosers-FOSec         4.97
+28       DABUR  -0.80         MW-NIFTY-NIFTY_FMCG         4.97
+29    KPITTECH  -0.43        T20-GL-loosers-FOSec         6.48
+30    KPITTECH  -0.43  MW-NIFTY-NIFTY_MS_IT_TELCM         6.48
+31       ALKEM  -0.75        T20-GL-loosers-FOSec         4.07
+32       ALKEM  -0.54          MW-Pre-Open-Market         4.07
+33  TORNTPOWER  -0.40          MW-Pre-Open-Market         4.81
+34       CANBK  -0.34     MW-NIFTY-NIFTY_PSU_BANK         7.43

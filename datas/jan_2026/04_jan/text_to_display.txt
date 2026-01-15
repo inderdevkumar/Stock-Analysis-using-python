@@ -1,0 +1,52 @@
+For LONG
+, Opperunities can be here:   {'ICICIPRULI': 6, 'HDFCBANK': 4, 'MCX': 4, 'CANBK': 4, 'SUNPHARMA': 4, 'CIPLA': 4, 'LTF': 4, 'DIVISLAB': 4, 'ICICIGI': 4, 'TORNTPHARM': 4, 'SYNGENE': 4, 'INFY': 3, 'PATANJALI': 3, 'DIXON': 3, 'IOC': 3, 'HDFCAMC': 3, 'IEX': 3, 'GRASIM': 2, 'SHREECEM': 2, 'DLF': 2, 'HAL': 2, 'BANDHANBNK': 2, 'LICI': 2, 'PRESTIGE': 2, 'KFINTECH': 2, 'KAYNES': 1, 'TCS': 1, 'ASIANPAINT': 1, 'KPITTECH': 1, 'DALBHARAT': 1, 'PIDILITIND': 1, 'PIIND': 1, 'DELHIVERY': 1}
+
+For SHORT
+, Opperunities can be here:   {'AXISBANK': 4, 'BAJAJ-AUTO': 3, 'GODREJCP': 3, 'SWIGGY': 2, 'MPHASIS': 2, 'MOTHERSON': 2, 'BRITANNIA': 2, 'TATACONSUM': 2, 'MANAPPURAM': 2, 'TIINDIA': 2, 'LTIM': 1}
+
+For file=> MW-NIFTY-LG-NIFTY500_HEALTH.csv:   min= -2.3 and max= 4.96
+
+For file=> MW-NIFTY-LG-NIFTY_AUTO.csv:   min= -0.69 and max= 8.45
+
+For file=> MW-NIFTY-LG-NIFTY_BANK.csv:   min= -1.26 and max= 3.82
+
+For file=> MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv:   min= -0.75 and max= 4.11
+
+For file=> MW-NIFTY-LG-NIFTY_FINSEREXBNK.csv:   min= -1.08 and max= 3.75
+
+For file=> MW-NIFTY-LG-NIFTY_FINSRV25_50.csv:   min= -1.26 and max= 3.75
+
+For file=> MW-NIFTY-LG-NIFTY_FIN_SERVICE.csv:   min= -1.26 and max= 3.75
+
+For file=> MW-NIFTY-LG-NIFTY_HEALTHCARE.csv:   min= -1.26 and max= 4.96
+
+For file=> MW-NIFTY-LG-NIFTY_MEDIA.csv:   min= -0.69 and max= 2.41
+
+For file=> MW-NIFTY-LG-NIFTY_METAL.csv:   min= -2.02 and max= 4.75
+
+For file=> MW-NIFTY-LG-NIFTY_MIDSML_HLTH.csv:   min= -2.3 and max= 4.96
+
+For file=> MW-NIFTY-LG-NIFTY_MS_FIN_SERV.csv:   min= -1.08 and max= 3.82
+
+For file=> MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv:   min= -1.1 and max= 3.86
+
+For file=> MW-NIFTY-LG-NIFTY_PHARMA.csv:   min= -1.26 and max= 4.96
+
+For file=> MW-NIFTY-LG-NIFTY_PSU_BANK.csv:   min= 0.39 and max= 5.36
+
+For file=> MW-NIFTY-LG-NIFTY_REALTY.csv:   min= -0.69 and max= 6.06
+
+For file=> MW-NIFTY-ST-NIFTY_FMCG.csv:   min= -4.94 and max= 5.09
+
+For file=> MW-Pre-Open-Market.csv:   min= -1.28 and max= 1.46
+
+For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.19 and max= 941.18
+
+For file=> T20-GL-gainers-FOSec.csv:   min= 0.36 and max= 8.45
+
+For file=> T20-GL-gainers-FOSecP.csv:   min= 0.35 and max= 8.09
+
+For file=> T20-GL-loosers-FOSec.csv:   min= -3.78 and max= -0.36
+
+For file=> T20-GL-loosers-FOSecP.csv:   min= -3.75 and max= -0.35
+

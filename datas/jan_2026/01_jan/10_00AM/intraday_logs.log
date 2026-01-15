@@ -1,0 +1,135 @@
+2026-01-01 10:00:03,517 - INFO - 
+
+============ __init__ ==========
+2026-01-01 10:00:03,517 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\01_jan
+2026-01-01 10:00:03,517 - INFO - 
+
+================ pre_open_market ===========
+2026-01-01 10:00:03,521 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:04,049 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 None
+2026-01-01 10:00:04,137 - INFO - Index(['Symbol', 'metadata.identifier', 'metadata.series', 'metadata.purpose',
+       'metadata.lastPrice', 'metadata.change', 'metadata.pChange',
+       'metadata.previousClose', 'metadata.finalQuantity',
+       'metadata.totalTurnover', 'metadata.marketCap', 'metadata.yearHigh',
+       'metadata.yearLow', 'metadata.iep', 'detail.preOpenMarket.preopen',
+       'detail.preOpenMarket.ato.totalBuyQuantity',
+       'detail.preOpenMarket.ato.totalSellQuantity',
+       'detail.preOpenMarket.IEP', 'detail.preOpenMarket.totalTradedVolume',
+       'detail.preOpenMarket.finalPrice', 'detail.preOpenMarket.finalQuantity',
+       'detail.preOpenMarket.lastUpdateTime',
+       'detail.preOpenMarket.totalSellQuantity',
+       'detail.preOpenMarket.totalBuyQuantity',
+       'detail.preOpenMarket.atoBuyQty', 'detail.preOpenMarket.atoSellQty',
+       'detail.preOpenMarket.Change', '%chng',
+       'detail.preOpenMarket.prevClose'],
+      dtype='object')
+2026-01-01 10:00:04,139 - INFO -   metadata.symbol  detail.preOpenMarket.perChange
+0            IDEA                            4.09
+1             PFC                            0.98
+2          RECLTD                            0.90
+3           IREDA                            0.79
+4           HUDCO                            0.71
+2026-01-01 10:00:06,166 - INFO - 
+
+================ oi_spurts ===========
+2026-01-01 10:00:06,169 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:06,621 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 11817
+2026-01-01 10:00:06,778 - INFO - Index(['Symbol', 'latestOI', 'prevOI', 'changeInOI', '%chng in OI', 'volume',
+       'futValue', 'optValue', 'total', 'premValue', 'underlyingValue'],
+      dtype='object')
+2026-01-01 10:00:06,781 - INFO -        symbol  avgInOI
+0      SWIGGY    31.75
+1         ITC    25.31
+2       NIFTY    13.00
+3    ASHOKLEY     8.25
+4  BAJAJHLDNG     8.08
+2026-01-01 10:00:08,797 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-01 10:00:08,797 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-01 10:00:08,800 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:09,289 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1402
+2026-01-01 10:00:09,295 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-01 10:00:09,296 - INFO -                index  pChange
+0         NIFTY AUTO     0.52
+1         NIFTY BANK     0.10
+2  NIFTY FIN SERVICE     0.02
+3  NIFTY FINSRV25 50     0.06
+4         NIFTY FMCG    -2.03
+2026-01-01 10:00:09,302 - INFO - Sectors for long: ['NIFTY MEDIA' 'NIFTY MS IT TELCM'], for short: ['NIFTY FMCG']
+2026-01-01 10:00:19,343 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:19,939 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FMCG HTTP/1.1" 200 948
+2026-01-01 10:00:19,946 - INFO -       symbol pChange
+0     COLPAL    0.66
+1  PATANJALI    0.49
+2   GODREJCP    0.18
+3  NESTLEIND    0.06
+4  BRITANNIA   -0.18
+2026-01-01 10:00:24,210 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 675
+2026-01-01 10:00:24,216 - INFO -       symbol pChange
+0       ZEEL    1.55
+1      SUNTV    1.09
+2  NETWORK18    0.71
+3    HATHWAY    0.64
+4     NAZARA    0.49
+2026-01-01 10:00:52,535 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MS%20IT%20TELCM HTTP/1.1" 200 1166
+2026-01-01 10:00:52,541 - INFO -        symbol pChange
+0        IDEA    5.11
+1  INDUSTOWER    4.49
+2        HFCL    2.68
+3     MPHASIS    0.82
+4  ZENSARTECH    0.31
+2026-01-01 10:00:54,561 - INFO - 
+
+================ top_gainers ===========
+2026-01-01 10:00:54,565 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:55,077 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-variations?index=gainers HTTP/1.1" 200 6310
+2026-01-01 10:00:55,087 - INFO - Index(['Symbol', 'series', 'open_price', 'high_price', 'low_price', 'ltp',
+       'prev_price', 'net_price', 'trade_quantity', 'turnover', 'market_type',
+       'ca_ex_dt', 'ca_purpose', '%chng'],
+      dtype='object')
+2026-01-01 10:00:55,088 - INFO -        symbol  perChange
+0        IDEA       4.83
+1  INDUSTOWER       4.01
+2  ADANIENSOL       2.34
+3   JSWENERGY       2.10
+4  ADANIGREEN       1.93
+2026-01-01 10:00:57,109 - INFO - 
+
+================ top_loosers ===========
+2026-01-01 10:00:57,111 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-01 10:00:57,507 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-variations?index=loosers HTTP/1.1" 200 5970
+2026-01-01 10:00:57,550 - INFO - Index(['Symbol', 'series', 'open_price', 'high_price', 'low_price', 'ltp',
+       'prev_price', 'net_price', 'trade_quantity', 'turnover', 'market_type',
+       'ca_ex_dt', 'ca_purpose', '%chng'],
+      dtype='object')
+2026-01-01 10:00:57,550 - INFO -     symbol  perChange
+0      ITC      -5.42
+1    ALKEM      -1.75
+2  DRREDDY      -1.41
+3   NUVAMA      -1.32
+4  RBLBANK      -1.11
+2026-01-01 10:01:01,726 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\01_jan' is ['9_30AM', '9_45AM', 'intraday_logs.log', 'MW-NIFTY-NIFTY_FMCG.csv', 'MW-NIFTY-NIFTY_MEDIA.csv', 'MW-NIFTY-NIFTY_MS_IT_TELCM.csv', 'MW-Pre-Open-Market.csv', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-loosers-FOSec.csv']
+2026-01-01 10:01:01,729 - INFO - Copied: T20-GL-gainers-FOSecP.csv
+2026-01-01 10:01:01,735 - INFO - Copied: T20-GL-loosers-FOSecP.csv
+2026-01-01 10:01:01,735 - INFO - 
+
+=============   test_stocks_for_long =========== 
+2026-01-01 10:01:01,951 - INFO -        Symbol  %chng               From CSV  %chng in OI
+0  BAJAJHLDNG   2.94  T20-GL-gainers-FOSecP         8.08
+1  ADANIENSOL   2.34   T20-GL-gainers-FOSec         5.51
+2  ADANIGREEN   1.93   T20-GL-gainers-FOSec         5.07
+3    ASHOKLEY   1.76   T20-GL-gainers-FOSec         8.25
+4      SWIGGY   1.09   T20-GL-gainers-FOSec        31.75
+2026-01-01 10:01:02,303 - INFO - 
+
+=============   test_stocks_for_short =========== 
+2026-01-01 10:01:02,383 - INFO -     Symbol  %chng               From CSV  %chng in OI
+0   SWIGGY  -1.99  T20-GL-loosers-FOSecP        31.75
+1      ITC  -5.42   T20-GL-loosers-FOSec        25.31
+2      ITC  -5.33    MW-NIFTY-NIFTY_FMCG        25.31
+3  DRREDDY  -1.41   T20-GL-loosers-FOSec         5.60

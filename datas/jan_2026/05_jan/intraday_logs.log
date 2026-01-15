@@ -1,0 +1,638 @@
+2026-01-05 18:46:21,236 - INFO - 
+
+============ __init__ ==========
+2026-01-05 18:46:21,237 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\05_jan
+2026-01-05 18:46:21,238 - INFO - 
+
+================ pre_open_market ===========
+2026-01-05 18:46:21,249 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-05 18:46:21,736 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 33102
+2026-01-05 18:46:22,019 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:22,102 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-05 18:46:22,104 - INFO -        Symbol  %chng
+0      AUBANK   2.36
+1        ONGC   2.21
+2  BANDHANBNK   1.76
+3       NYKAA   1.51
+4      MARICO   1.35
+2026-01-05 18:46:24,166 - INFO - 
+
+================ oi_spurts ===========
+2026-01-05 18:46:24,277 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 13161
+2026-01-05 18:46:24,284 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:24,304 - INFO - Index(['Symbol', '%chng in OI'], dtype='object')
+2026-01-05 18:46:24,305 - INFO -        Symbol  %chng in OI
+0  PREMIERENE       184.18
+1  WAAREEENER       100.98
+2        PGEL        26.98
+3    FINNIFTY        26.70
+4      360ONE        25.14
+2026-01-05 18:46:26,338 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-05 18:46:26,340 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-05 18:46:26,553 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1378
+2026-01-05 18:46:26,555 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:26,564 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-05 18:46:26,564 - INFO -                index  pChange
+0         NIFTY AUTO     0.31
+1         NIFTY BANK    -0.18
+2  NIFTY FIN SERVICE    -0.17
+3  NIFTY FINSRV25 50    -0.13
+4         NIFTY FMCG     0.68
+2026-01-05 18:46:26,586 - INFO - Sectors for long: ['NIFTY FMCG' 'NIFTY MEDIA' 'NIFTY METAL' 'NIFTY PSU BANK' 'NIFTY REALTY'
+ 'NIFTY CONSR DURBL' 'NIFTY CHEMICALS'], for short: ['NIFTY IT' 'NIFTY OIL AND GAS' 'NIFTY MS IT TELCM']
+2026-01-05 18:46:36,867 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FMCG HTTP/1.1" 200 926
+2026-01-05 18:46:36,869 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:36,873 - INFO -        Symbol %chng
+0   NESTLEIND  2.76
+1   PATANJALI  2.41
+2      MARICO  2.04
+3  HINDUNILVR  1.60
+4   BRITANNIA  1.21
+2026-01-05 18:46:39,037 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20IT HTTP/1.1" 200 676
+2026-01-05 18:46:39,039 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:39,044 - INFO -     Symbol  %chng
+0     LTIM   0.13
+1  MPHASIS  -0.43
+2  COFORGE  -0.50
+3     OFSS  -0.68
+4    TECHM  -0.82
+2026-01-05 18:46:41,329 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 677
+2026-01-05 18:46:41,330 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:41,334 - INFO -      Symbol %chng
+0  SAREGAMA  3.69
+1    PFOCUS  1.83
+2    NAZARA  0.98
+3   PVRINOX  0.66
+4     SUNTV  0.40
+2026-01-05 18:46:43,557 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20METAL HTTP/1.1" 200 938
+2026-01-05 18:46:43,557 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:43,561 - INFO -        Symbol %chng
+0        SAIL  2.45
+1  HINDCOPPER  2.01
+2   APLAPOLLO  1.79
+3   TATASTEEL  1.56
+4         JSL  1.11
+2026-01-05 18:46:47,808 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 768
+2026-01-05 18:46:47,814 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:47,818 - INFO -        Symbol %chng
+0   UNIONBANK  3.78
+1        SBIN  0.65
+2  BANKBARODA  0.64
+3   BANKINDIA  0.52
+4    MAHABANK  0.03
+2026-01-05 18:46:50,002 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 684
+2026-01-05 18:46:50,004 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:50,007 - INFO -        Symbol %chng
+0       SOBHA  6.80
+1    PRESTIGE  3.29
+2       LODHA  3.11
+3  GODREJPROP  2.76
+4         DLF  1.98
+2026-01-05 18:46:56,172 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CONSR%20DURBL HTTP/1.1" 200 934
+2026-01-05 18:46:56,174 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:56,178 - INFO -        Symbol %chng
+0        PGEL  4.52
+1       AMBER  3.28
+2      VOLTAS  3.20
+3    CROMPTON  2.96
+4  KALYANKJIL  1.78
+2026-01-05 18:46:58,338 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20OIL%20AND%20GAS HTTP/1.1" 200 903
+2026-01-05 18:46:58,340 - INFO - Attempt 1: Status 200
+2026-01-05 18:46:58,342 - INFO -        Symbol  %chng
+0   GUJGASLTD   1.31
+1        GSPL   0.55
+2    AEGISLOG   0.52
+3  CASTROLIND   0.01
+4    RELIANCE  -0.96
+2026-01-05 18:47:02,465 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CHEMICALS HTTP/1.1" 200 1147
+2026-01-05 18:47:02,466 - INFO - Attempt 1: Status 200
+2026-01-05 18:47:02,470 - INFO -        Symbol %chng
+0   SOLARINDS  3.19
+1    SUMICHEM  2.09
+2    SWANCORP  2.08
+3  PIDILITIND  1.81
+4        ATUL  0.98
+2026-01-05 18:47:10,636 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MS%20IT%20TELCM HTTP/1.1" 200 1160
+2026-01-05 18:47:10,640 - INFO - Attempt 1: Status 200
+2026-01-05 18:47:10,646 - INFO -        Symbol %chng
+0      CYIENT  4.17
+1       AFFLE  2.00
+2  ZENSARTECH  1.48
+3   INTELLECT  0.61
+4    TATACOMM  0.55
+2026-01-05 18:47:12,663 - INFO - 
+
+================ gainers_loosers ===========
+2026-01-05 18:47:12,781 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-stocksTraded HTTP/1.1" 200 None
+2026-01-05 18:47:12,913 - INFO - Attempt 1: Status 200
+2026-01-05 18:47:12,971 - INFO - Index(['symbol', 'pchange'], dtype='object')
+2026-01-05 18:47:12,973 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-05 18:47:12,973 - INFO -        Symbol  %chng
+0  HINDCOPPER   2.01
+1    HDFCBANK  -2.31
+2      NETWEB   8.13
+3       CUPID  -7.37
+4         ITC  -0.13
+2026-01-05 18:47:15,255 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\05_jan' is ['intraday_logs.log', 'MW-NIFTY-LG-NIFTY_CHEMICALS.csv', 'MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv', 'MW-NIFTY-LG-NIFTY_FMCG.csv', 'MW-NIFTY-LG-NIFTY_MEDIA.csv', 'MW-NIFTY-LG-NIFTY_METAL.csv', 'MW-NIFTY-LG-NIFTY_PSU_BANK.csv', 'MW-NIFTY-LG-NIFTY_REALTY.csv', 'MW-NIFTY-ST-NIFTY_IT.csv', 'MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv', 'MW-NIFTY-ST-NIFTY_OIL_AND_GAS.csv', 'MW-Pre-Open-Market.csv', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-loosers-FOSec.csv']
+2026-01-05 18:47:15,302 - INFO - Copied: T20-GL-gainers-FOSecP.csv
+2026-01-05 18:47:15,332 - INFO - Copied: T20-GL-loosers-FOSecP.csv
+2026-01-05 18:47:15,333 - INFO - 
+
+=============   test_oppertunity_in_long_and_short =========== 
+2026-01-05 18:47:15,333 - INFO - 
+
+=============   stocks_for_long =========== 
+2026-01-05 18:47:15,828 - INFO -          Symbol  %chng               From CSV  %chng in OI
+0    INDUSTOWER   3.88  T20-GL-gainers-FOSecP         2.08
+1          INFY   0.87  T20-GL-gainers-FOSecP         6.60
+2        RECLTD   3.28  T20-GL-gainers-FOSecP         4.98
+3        RECLTD   0.99     MW-Pre-Open-Market         4.98
+4      ASHOKLEY   3.24  T20-GL-gainers-FOSecP         2.30
+..          ...    ...                    ...          ...
+191        NHPC   0.45     MW-Pre-Open-Market         7.68
+192    HDFCBANK   0.41     MW-Pre-Open-Market        12.91
+193  IDFCFIRSTB   0.41     MW-Pre-Open-Market         3.15
+194         MCX   0.41     MW-Pre-Open-Market         3.52
+195     PAGEIND   0.35     MW-Pre-Open-Market         5.33
+
+[196 rows x 4 columns]
+2026-01-05 18:47:18,027 - INFO - 
+
+=============   stocks_for_short =========== 
+2026-01-05 18:47:18,298 - INFO -          Symbol  %chng                From CSV  %chng in OI
+0           ITC  -3.75   T20-GL-loosers-FOSecP         6.79
+1        KAYNES  -0.98   T20-GL-loosers-FOSecP         5.97
+2         TITAN  -0.98   T20-GL-loosers-FOSecP         4.45
+3        SWIGGY  -0.77   T20-GL-loosers-FOSecP        23.84
+4        SWIGGY  -2.43    T20-GL-loosers-FOSec        23.84
+..          ...    ...                     ...          ...
+111    HDFCLIFE  -0.44      MW-Pre-Open-Market         6.02
+112     SBICARD  -0.45      MW-Pre-Open-Market         2.63
+113  KALYANKJIL  -0.61      MW-Pre-Open-Market         6.31
+114    UNITDSPR  -0.32  MW-NIFTY-LG-NIFTY_FMCG         3.03
+115       DABUR  -0.34  MW-NIFTY-LG-NIFTY_FMCG         7.10
+
+[116 rows x 4 columns]
+2026-01-05 18:47:18,481 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-05 18:47:18,485 - INFO - LONG Step 1 - Occurrences of Symbol: {'MARICO': 4, 'LODHA': 4, 'PGEL': 4, 'BANKBARODA': 4, 'BANKINDIA': 4, 'AMBER': 4, 'HINDALCO': 4, 'UNIONBANK': 3, 'VOLTAS': 3, 'TATASTEEL': 3, 'BLUESTARCO': 3, 'PATANJALI': 3, 'GODREJCP': 3, 'TATAELXSI': 3, 'DLF': 3, 'NUVAMA': 2, 'SHREECEM': 2, 'MARUTI': 2, 'KAYNES': 2, 'AXISBANK': 2, 'SBIN': 2, 'MUTHOOTFIN': 2, 'HAVELLS': 2, 'NESTLEIND': 2, 'HINDUNILVR': 2, 'PIDILITIND': 2, 'GODREJPROP': 2, 'BRITANNIA': 2, 'TITAN': 2, 'AUBANK': 2, 'NYKAA': 2, 'MFSL': 2, 'BANDHANBNK': 2, 'PRESTIGE': 2, 'CROMPTON': 2, 'KALYANKJIL': 2, 'UNOMINDA': 2, 'KFINTECH': 2, 'SRF': 2, 'PPLPHARMA': 2, 'PHOENIXLTD': 2, 'TVSMOTOR': 2, 'BHEL': 2, 'ABCAPITAL': 2, 'BDL': 2, 'JINDALSTEL': 2, 'POWERINDIA': 2, 'ANGELONE': 2, 'POLYCAB': 2, 'NATIONALUM': 2, 'MOTHERSON': 2, 'IRFC': 2, 'ULTRACEMCO': 2, 'SUPREMEIND': 2, 'PFC': 2, 'ASTRAL': 2, 'FORTIS': 2, 'OIL': 2, 'RECLTD': 2, 'ABB': 1, 'CGPOWER': 1, 'DIXON': 1, 'NHPC': 1, 'HDFCBANK': 1, 'IDFCFIRSTB': 1, 'MCX': 1, '360ONE': 1, 'TIINDIA': 1, 'BAJAJHLDNG': 1, 'IEX': 1, 'PNB': 1, 'ICICIGI': 1, 'LICHSGFIN': 1, 'ZYDUSLIFE': 1, 'ONGC': 1, 'HINDZINC': 1, 'DALBHARAT': 1, 'INOXWIND': 1, 'COALINDIA': 1, 'COFORGE': 1, 'VEDL': 1, 'IREDA': 1, 'INDUSTOWER': 1, 'HAL': 1, 'DELHIVERY': 1, 'COLPAL': 1, 'ASHOKLEY': 1, 'INDUSINDBK': 1, 'NTPC': 1, 'KOTAKBANK': 1, 'RVNL': 1, 'SWIGGY': 1, 'CUMMINSIND': 1, 'MANAPPURAM': 1, 'POWERGRID': 1, 'WIPRO': 1, 'TECHM': 1, 'GMRAIRPORT': 1, 'KEI': 1, 'CHOLAFIN': 1, 'HDFCLIFE': 1, 'APOLLOHOSP': 1, 'LTIM': 1, 'TORNTPOWER': 1, 'SIEMENS': 1, 'BEL': 1, 'ICICIBANK': 1, 'BSE': 1, 'INFY': 1, 'SAMMAANCAP': 1, 'YESBANK': 1, 'EICHERMOT': 1, 'MAZDOCK': 1, 'SBILIFE': 1, 'PAGEIND': 1}
+2026-01-05 18:47:18,502 - INFO - 
+LONG Step 2 - Filtered DataFrame:          Symbol  %chng              From CSV  %chng in OI
+15   BANKBARODA   0.64  T20-GL-gainers-FOSec         3.76
+23     HINDALCO   0.57  T20-GL-gainers-FOSec         3.25
+37    ABCAPITAL   0.86  T20-GL-gainers-FOSec        10.90
+43     ANGELONE   0.59  T20-GL-gainers-FOSec         3.76
+45    BANKINDIA   0.52  T20-GL-gainers-FOSec         9.32
+60     GODREJCP   0.50  T20-GL-gainers-FOSec         2.60
+68   POWERINDIA   0.99  T20-GL-gainers-FOSec         4.90
+100        SBIN   0.65  T20-GL-gainers-FOSec         9.73
+104         BSE   0.35  T20-GL-gainers-FOSec         3.88
+107      KAYNES   0.64  T20-GL-gainers-FOSec         5.97
+124     MAZDOCK   0.82  T20-GL-gainers-FOSec         3.68
+132       TITAN   0.60  T20-GL-gainers-FOSec         4.45
+142     SBILIFE   0.60  T20-GL-gainers-FOSec         8.21
+153    HDFCLIFE   0.76  T20-GL-gainers-FOSec         6.02
+157   PPLPHARMA   0.40  T20-GL-gainers-FOSec         7.36
+159         SRF   0.83  T20-GL-gainers-FOSec         7.76
+161   TATAELXSI   0.50  T20-GL-gainers-FOSec         9.64
+164  BAJAJHLDNG   0.96  T20-GL-gainers-FOSec        11.65
+167     HAVELLS   0.94  T20-GL-gainers-FOSec         4.43
+171     ICICIGI   0.54  T20-GL-gainers-FOSec         2.13
+172   ZYDUSLIFE   0.56  T20-GL-gainers-FOSec         4.70
+
+2026-01-05 18:47:18,503 - INFO - 
+LONG  Step 3 - Final Dictionary: {'BANKBARODA': 4, 'HINDALCO': 4, 'ABCAPITAL': 2, 'ANGELONE': 2, 'BANKINDIA': 4, 'GODREJCP': 3, 'POWERINDIA': 2, 'SBIN': 2, 'BSE': 1, 'KAYNES': 2, 'MAZDOCK': 1, 'TITAN': 2, 'SBILIFE': 1, 'HDFCLIFE': 1, 'PPLPHARMA': 2, 'SRF': 2, 'TATAELXSI': 3, 'BAJAJHLDNG': 1, 'HAVELLS': 2, 'ICICIGI': 1, 'ZYDUSLIFE': 1}
+
+2026-01-05 18:47:18,504 - INFO - For LONG Step 4- After sorting: {'BANKBARODA': 4, 'HINDALCO': 4, 'BANKINDIA': 4, 'GODREJCP': 3, 'TATAELXSI': 3, 'ABCAPITAL': 2, 'ANGELONE': 2, 'POWERINDIA': 2, 'SBIN': 2, 'KAYNES': 2, 'TITAN': 2, 'PPLPHARMA': 2, 'SRF': 2, 'HAVELLS': 2, 'BSE': 1, 'MAZDOCK': 1, 'SBILIFE': 1, 'HDFCLIFE': 1, 'BAJAJHLDNG': 1, 'ICICIGI': 1, 'ZYDUSLIFE': 1}
+
+2026-01-05 18:47:18,585 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-05 18:47:18,585 - INFO - SHORT Step 1 - Occurrences of Symbol: {'PERSISTENT': 4, 'TECHM': 3, 'INDUSTOWER': 3, 'TCS': 3, 'HCLTECH': 3, 'BPCL': 3, 'OFSS': 3, 'COFORGE': 3, 'VBL': 3, 'ONGC': 2, 'HINDPETRO': 2, 'KPITTECH': 2, 'NTPC': 2, 'OIL': 2, 'WIPRO': 2, 'IOC': 2, 'GAIL': 2, 'DIXON': 2, 'BOSCHLTD': 2, 'RELIANCE': 2, 'INFY': 2, 'BAJFINANCE': 2, 'POLICYBZR': 2, 'SWIGGY': 2, 'DRREDDY': 2, 'INDHOTEL': 1, 'KALYANKJIL': 1, 'MANAPPURAM': 1, 'LUPIN': 1, 'MANKIND': 1, 'IDFCFIRSTB': 1, 'HUDCO': 1, 'CHOLAFIN': 1, 'TIINDIA': 1, 'UNITDSPR': 1, 'PAGEIND': 1, 'SBICARD': 1, 'NAUKRI': 1, 'SYNGENE': 1, 'HDFCLIFE': 1, 'CONCOR': 1, 'BIOCON': 1, 'BLUESTARCO': 1, 'INOXWIND': 1, 'ANGELONE': 1, 'DALBHARAT': 1, 'CGPOWER': 1, 'CAMS': 1, 'LICHSGFIN': 1, 'ABB': 1, 'ITC': 1, 'JUBLFOOD': 1, 'IRCTC': 1, 'TITAN': 1, 'HDFCAMC': 1, 'MARICO': 1, 'GODREJCP': 1, 'BAJAJHLDNG': 1, 'HDFCBANK': 1, 'POLYCAB': 1, 'WAAREEENER': 1, 'PREMIERENE': 1, 'MCX': 1, 'ASHOKLEY': 1, 'RBLBANK': 1, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'RVNL': 1, 'SUZLON': 1, 'CUMMINSIND': 1, 'JIOFIN': 1, 'DMART': 1, 'IRFC': 1, 'KAYNES': 1, 'IREDA': 1, 'LICI': 1, 'FEDERALBNK': 1, 'MAXHEALTH': 1, 'TATAPOWER': 1, 'DABUR': 1}
+2026-01-05 18:47:18,608 - INFO - 
+SHORT Step 2 - Filtered DataFrame:          Symbol  %chng              From CSV  %chng in OI
+6       DRREDDY  -0.72  T20-GL-loosers-FOSec         3.71
+8     POLICYBZR  -0.59  T20-GL-loosers-FOSec         9.38
+18     RELIANCE  -0.96  T20-GL-loosers-FOSec         6.01
+24      POLYCAB  -0.53  T20-GL-loosers-FOSec        12.96
+29         NTPC  -0.45  T20-GL-loosers-FOSec         9.11
+31        DIXON  -0.90  T20-GL-loosers-FOSec         4.36
+39    HINDPETRO  -0.98  T20-GL-loosers-FOSec         6.84
+41          MCX  -0.81  T20-GL-loosers-FOSec         3.52
+42     ASHOKLEY  -0.55  T20-GL-loosers-FOSec         2.30
+44      COFORGE  -0.50  T20-GL-loosers-FOSec         4.51
+50   APOLLOHOSP  -0.60  T20-GL-loosers-FOSec         2.66
+54          PFC  -0.48  T20-GL-loosers-FOSec         3.12
+55   INDUSINDBK  -0.51  T20-GL-loosers-FOSec         2.78
+59       JIOFIN  -0.55  T20-GL-loosers-FOSec         3.06
+61         IRFC  -0.72  T20-GL-loosers-FOSec         2.32
+65     BOSCHLTD  -0.88  T20-GL-loosers-FOSec        16.69
+77        TECHM  -0.82  T20-GL-loosers-FOSec         5.22
+81      CGPOWER  -0.48  T20-GL-loosers-FOSec         4.81
+85     CHOLAFIN  -0.43  T20-GL-loosers-FOSec         2.12
+87     INDHOTEL  -0.62  T20-GL-loosers-FOSec         5.65
+92      PAGEIND  -0.45  T20-GL-loosers-FOSec         5.33
+95         OFSS  -0.68  T20-GL-loosers-FOSec         5.67
+100      CONCOR  -0.53  T20-GL-loosers-FOSec         2.56
+101      BIOCON  -0.37  T20-GL-loosers-FOSec         3.19
+103   DALBHARAT  -0.43  T20-GL-loosers-FOSec         2.42
+104         ABB  -0.77  T20-GL-loosers-FOSec         2.72
+105        CAMS  -0.93  T20-GL-loosers-FOSec         2.87
+107     MANKIND  -0.39  T20-GL-loosers-FOSec         5.12
+108     SYNGENE  -0.55  T20-GL-loosers-FOSec         3.03
+
+2026-01-05 18:47:18,608 - INFO - 
+SHORT  Step 3 - Final Dictionary: {'DRREDDY': 2, 'POLICYBZR': 2, 'RELIANCE': 2, 'POLYCAB': 1, 'NTPC': 2, 'DIXON': 2, 'HINDPETRO': 2, 'MCX': 1, 'ASHOKLEY': 1, 'COFORGE': 3, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'JIOFIN': 1, 'IRFC': 1, 'BOSCHLTD': 2, 'TECHM': 3, 'CGPOWER': 1, 'CHOLAFIN': 1, 'INDHOTEL': 1, 'PAGEIND': 1, 'OFSS': 3, 'CONCOR': 1, 'BIOCON': 1, 'DALBHARAT': 1, 'ABB': 1, 'CAMS': 1, 'MANKIND': 1, 'SYNGENE': 1}
+
+2026-01-05 18:47:18,610 - INFO - For SHORT Step 4- After sorting: {'COFORGE': 3, 'TECHM': 3, 'OFSS': 3, 'DRREDDY': 2, 'POLICYBZR': 2, 'RELIANCE': 2, 'NTPC': 2, 'DIXON': 2, 'HINDPETRO': 2, 'BOSCHLTD': 2, 'POLYCAB': 1, 'MCX': 1, 'ASHOKLEY': 1, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'JIOFIN': 1, 'IRFC': 1, 'CGPOWER': 1, 'CHOLAFIN': 1, 'INDHOTEL': 1, 'PAGEIND': 1, 'CONCOR': 1, 'BIOCON': 1, 'DALBHARAT': 1, 'ABB': 1, 'CAMS': 1, 'MANKIND': 1, 'SYNGENE': 1}
+
+2026-01-05 18:47:18,614 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,616 - INFO - For file MW-NIFTY-LG-NIFTY_CHEMICALS.csv: min= -2.46 and max= 3.19 
+2026-01-05 18:47:18,620 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,621 - INFO - For file MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv: min= -1.58 and max= 4.52 
+2026-01-05 18:47:18,625 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,627 - INFO - For file MW-NIFTY-LG-NIFTY_FMCG.csv: min= -1.1 and max= 2.76 
+2026-01-05 18:47:18,633 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,633 - INFO - For file MW-NIFTY-LG-NIFTY_MEDIA.csv: min= -1.58 and max= 3.69 
+2026-01-05 18:47:18,640 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,640 - INFO - For file MW-NIFTY-LG-NIFTY_METAL.csv: min= -0.95 and max= 2.45 
+2026-01-05 18:47:18,645 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,645 - INFO - For file MW-NIFTY-LG-NIFTY_PSU_BANK.csv: min= -1.8 and max= 3.78 
+2026-01-05 18:47:18,651 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,651 - INFO - For file MW-NIFTY-LG-NIFTY_REALTY.csv: min= 0.29 and max= 6.8 
+2026-01-05 18:47:18,655 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,656 - INFO - For file MW-NIFTY-ST-NIFTY_IT.csv: min= -2.23 and max= 0.13 
+2026-01-05 18:47:18,659 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,661 - INFO - For file MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv: min= -3.31 and max= 4.17 
+2026-01-05 18:47:18,665 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,665 - INFO - For file MW-NIFTY-ST-NIFTY_OIL_AND_GAS.csv: min= -2.02 and max= 1.31 
+2026-01-05 18:47:18,672 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,672 - INFO - For file MW-Pre-Open-Market.csv: min= -1.28 and max= 2.36 
+2026-01-05 18:47:18,677 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,679 - INFO - For file Spurts-in-OI-By-Underlying.csv: min= 0.08 and max= 184.18 
+2026-01-05 18:47:18,684 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,684 - INFO - For file T20-GL-gainers-FOSec.csv: min= 0.35 and max= 4.52 
+2026-01-05 18:47:18,688 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,688 - INFO - For file T20-GL-gainers-FOSecP.csv: min= 0.35 and max= 8.09 
+2026-01-05 18:47:18,693 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,695 - INFO - For file T20-GL-loosers-FOSec.csv: min= -6.96 and max= -0.35 
+2026-01-05 18:47:18,697 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:47:18,699 - INFO - For file T20-GL-loosers-FOSecP.csv: min= -3.75 and max= -0.35 
+2026-01-05 18:49:21,151 - INFO - 
+
+============ __init__ ==========
+2026-01-05 18:49:21,153 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\05_jan
+2026-01-05 18:49:21,153 - INFO - 
+
+================ pre_open_market ===========
+2026-01-05 18:49:21,158 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-05 18:49:21,763 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 None
+2026-01-05 18:49:21,893 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:21,939 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-05 18:49:21,939 - INFO -        Symbol  %chng
+0      AUBANK   2.36
+1        ONGC   2.21
+2  BANDHANBNK   1.76
+3       NYKAA   1.51
+4      MARICO   1.35
+2026-01-05 18:49:23,977 - INFO - 
+
+================ oi_spurts ===========
+2026-01-05 18:49:24,086 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 12662
+2026-01-05 18:49:24,409 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:24,535 - INFO - Index(['Symbol', '%chng in OI'], dtype='object')
+2026-01-05 18:49:24,537 - INFO -        Symbol  %chng in OI
+0  PREMIERENE       184.18
+1  WAAREEENER       100.98
+2        PGEL        26.98
+3    FINNIFTY        26.70
+4      360ONE        25.14
+2026-01-05 18:49:26,913 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-05 18:49:26,914 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-05 18:49:27,018 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1378
+2026-01-05 18:49:27,019 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:27,025 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-05 18:49:27,027 - INFO -                index  pChange
+0         NIFTY AUTO     0.31
+1         NIFTY BANK    -0.18
+2  NIFTY FIN SERVICE    -0.17
+3  NIFTY FINSRV25 50    -0.13
+4         NIFTY FMCG     0.68
+2026-01-05 18:49:27,057 - INFO - Sectors for long: ['NIFTY FMCG' 'NIFTY MEDIA' 'NIFTY METAL' 'NIFTY PSU BANK' 'NIFTY REALTY'
+ 'NIFTY CONSR DURBL' 'NIFTY CHEMICALS'], for short: ['NIFTY IT' 'NIFTY OIL AND GAS' 'NIFTY MS IT TELCM']
+2026-01-05 18:49:37,328 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FMCG HTTP/1.1" 200 926
+2026-01-05 18:49:37,330 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:37,339 - INFO -        Symbol %chng
+0   NESTLEIND  2.76
+1   PATANJALI  2.41
+2      MARICO  2.04
+3  HINDUNILVR  1.60
+4   BRITANNIA  1.21
+2026-01-05 18:49:39,495 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20IT HTTP/1.1" 200 676
+2026-01-05 18:49:39,497 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:39,507 - INFO -     Symbol  %chng
+0     LTIM   0.13
+1  MPHASIS  -0.43
+2  COFORGE  -0.50
+3     OFSS  -0.68
+4    TECHM  -0.82
+2026-01-05 18:49:41,676 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 677
+2026-01-05 18:49:41,680 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:41,687 - INFO -      Symbol %chng
+0  SAREGAMA  3.69
+1    PFOCUS  1.83
+2    NAZARA  0.98
+3   PVRINOX  0.66
+4     SUNTV  0.40
+2026-01-05 18:49:43,826 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20METAL HTTP/1.1" 200 938
+2026-01-05 18:49:43,829 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:43,844 - INFO -        Symbol %chng
+0        SAIL  2.45
+1  HINDCOPPER  2.01
+2   APLAPOLLO  1.79
+3   TATASTEEL  1.56
+4         JSL  1.11
+2026-01-05 18:49:48,002 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 768
+2026-01-05 18:49:48,004 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:48,021 - INFO -        Symbol %chng
+0   UNIONBANK  3.78
+1        SBIN  0.65
+2  BANKBARODA  0.64
+3   BANKINDIA  0.52
+4    MAHABANK  0.03
+2026-01-05 18:49:50,181 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 684
+2026-01-05 18:49:50,184 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:50,196 - INFO -        Symbol %chng
+0       SOBHA  6.80
+1    PRESTIGE  3.29
+2       LODHA  3.11
+3  GODREJPROP  2.76
+4         DLF  1.98
+2026-01-05 18:49:56,434 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CONSR%20DURBL HTTP/1.1" 200 934
+2026-01-05 18:49:56,457 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:56,478 - INFO -        Symbol %chng
+0        PGEL  4.52
+1       AMBER  3.28
+2      VOLTAS  3.20
+3    CROMPTON  2.96
+4  KALYANKJIL  1.78
+2026-01-05 18:49:58,629 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20OIL%20AND%20GAS HTTP/1.1" 200 903
+2026-01-05 18:49:58,632 - INFO - Attempt 1: Status 200
+2026-01-05 18:49:58,640 - INFO -        Symbol  %chng
+0   GUJGASLTD   1.31
+1        GSPL   0.55
+2    AEGISLOG   0.52
+3  CASTROLIND   0.01
+4    RELIANCE  -0.96
+2026-01-05 18:50:02,858 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CHEMICALS HTTP/1.1" 200 1147
+2026-01-05 18:50:02,863 - INFO - Attempt 1: Status 200
+2026-01-05 18:50:02,871 - INFO -        Symbol %chng
+0   SOLARINDS  3.19
+1    SUMICHEM  2.09
+2    SWANCORP  2.08
+3  PIDILITIND  1.81
+4        ATUL  0.98
+2026-01-05 18:50:11,018 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MS%20IT%20TELCM HTTP/1.1" 200 1160
+2026-01-05 18:50:11,029 - INFO - Attempt 1: Status 200
+2026-01-05 18:50:11,033 - INFO -        Symbol %chng
+0      CYIENT  4.17
+1       AFFLE  2.00
+2  ZENSARTECH  1.48
+3   INTELLECT  0.61
+4    TATACOMM  0.55
+2026-01-05 18:50:13,058 - INFO - 
+
+================ gainers_loosers ===========
+2026-01-05 18:50:13,477 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-stocksTraded HTTP/1.1" 200 None
+2026-01-05 18:50:13,584 - INFO - Attempt 1: Status 200
+2026-01-05 18:50:13,688 - INFO - Index(['symbol', 'pchange'], dtype='object')
+2026-01-05 18:50:13,690 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-05 18:50:13,690 - INFO -        Symbol  %chng
+0  HINDCOPPER   2.01
+1    HDFCBANK  -2.31
+2      NETWEB   8.13
+3       CUPID  -7.37
+4         ITC  -0.13
+2026-01-05 18:50:15,768 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\05_jan' is ['intraday_logs.log', 'long_stocks.xlsx', 'MW-NIFTY-LG-NIFTY_CHEMICALS.csv', 'MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv', 'MW-NIFTY-LG-NIFTY_FMCG.csv', 'MW-NIFTY-LG-NIFTY_MEDIA.csv', 'MW-NIFTY-LG-NIFTY_METAL.csv', 'MW-NIFTY-LG-NIFTY_PSU_BANK.csv', 'MW-NIFTY-LG-NIFTY_REALTY.csv', 'MW-NIFTY-ST-NIFTY_IT.csv', 'MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv', 'MW-NIFTY-ST-NIFTY_OIL_AND_GAS.csv', 'MW-Pre-Open-Market.csv', 'short_stocks.xlsx', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-gainers-FOSecP.csv', 'T20-GL-loosers-FOSec.csv', 'T20-GL-loosers-FOSecP.csv', 'text_to_display.txt']
+2026-01-05 18:50:15,768 - INFO - 'T20-GL-gainers-FOSecP' and 'T20-GL-loosers-FOSecP' files already present in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\05_jan'
+2026-01-05 18:50:15,768 - INFO - previous_day_gainers_loosers_present bool [True, True]
+2026-01-05 18:50:15,768 - INFO - 
+
+=============   test_oppertunity_in_long_and_short =========== 
+2026-01-05 18:50:15,768 - INFO - 
+
+=============   stocks_for_long =========== 
+2026-01-05 18:50:16,074 - INFO -          Symbol  %chng               From CSV  %chng in OI
+0    INDUSTOWER   3.88  T20-GL-gainers-FOSecP         2.08
+1          INFY   0.87  T20-GL-gainers-FOSecP         6.60
+2        RECLTD   3.28  T20-GL-gainers-FOSecP         4.98
+3        RECLTD   0.99     MW-Pre-Open-Market         4.98
+4      ASHOKLEY   3.24  T20-GL-gainers-FOSecP         2.30
+..          ...    ...                    ...          ...
+191        NHPC   0.45     MW-Pre-Open-Market         7.68
+192    HDFCBANK   0.41     MW-Pre-Open-Market        12.91
+193  IDFCFIRSTB   0.41     MW-Pre-Open-Market         3.15
+194         MCX   0.41     MW-Pre-Open-Market         3.52
+195     PAGEIND   0.35     MW-Pre-Open-Market         5.33
+
+[196 rows x 4 columns]
+2026-01-05 18:50:16,216 - INFO - 
+
+=============   stocks_for_short =========== 
+2026-01-05 18:50:16,450 - INFO -          Symbol  %chng                From CSV  %chng in OI
+0           ITC  -3.75   T20-GL-loosers-FOSecP         6.79
+1        KAYNES  -0.98   T20-GL-loosers-FOSecP         5.97
+2         TITAN  -0.98   T20-GL-loosers-FOSecP         4.45
+3        SWIGGY  -0.77   T20-GL-loosers-FOSecP        23.84
+4        SWIGGY  -2.43    T20-GL-loosers-FOSec        23.84
+..          ...    ...                     ...          ...
+111    HDFCLIFE  -0.44      MW-Pre-Open-Market         6.02
+112     SBICARD  -0.45      MW-Pre-Open-Market         2.63
+113  KALYANKJIL  -0.61      MW-Pre-Open-Market         6.31
+114    UNITDSPR  -0.32  MW-NIFTY-LG-NIFTY_FMCG         3.03
+115       DABUR  -0.34  MW-NIFTY-LG-NIFTY_FMCG         7.10
+
+[116 rows x 4 columns]
+2026-01-05 18:50:16,663 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-05 18:50:16,665 - INFO - LONG Step 1 - Occurrences of Symbol: {'MARICO': 4, 'LODHA': 4, 'PGEL': 4, 'BANKBARODA': 4, 'BANKINDIA': 4, 'AMBER': 4, 'HINDALCO': 4, 'UNIONBANK': 3, 'VOLTAS': 3, 'TATASTEEL': 3, 'BLUESTARCO': 3, 'PATANJALI': 3, 'GODREJCP': 3, 'TATAELXSI': 3, 'DLF': 3, 'NUVAMA': 2, 'SHREECEM': 2, 'MARUTI': 2, 'KAYNES': 2, 'AXISBANK': 2, 'SBIN': 2, 'MUTHOOTFIN': 2, 'HAVELLS': 2, 'NESTLEIND': 2, 'HINDUNILVR': 2, 'PIDILITIND': 2, 'GODREJPROP': 2, 'BRITANNIA': 2, 'TITAN': 2, 'AUBANK': 2, 'NYKAA': 2, 'MFSL': 2, 'BANDHANBNK': 2, 'PRESTIGE': 2, 'CROMPTON': 2, 'KALYANKJIL': 2, 'UNOMINDA': 2, 'KFINTECH': 2, 'SRF': 2, 'PPLPHARMA': 2, 'PHOENIXLTD': 2, 'TVSMOTOR': 2, 'BHEL': 2, 'ABCAPITAL': 2, 'BDL': 2, 'JINDALSTEL': 2, 'POWERINDIA': 2, 'ANGELONE': 2, 'POLYCAB': 2, 'NATIONALUM': 2, 'MOTHERSON': 2, 'IRFC': 2, 'ULTRACEMCO': 2, 'SUPREMEIND': 2, 'PFC': 2, 'ASTRAL': 2, 'FORTIS': 2, 'OIL': 2, 'RECLTD': 2, 'ABB': 1, 'CGPOWER': 1, 'DIXON': 1, 'NHPC': 1, 'HDFCBANK': 1, 'IDFCFIRSTB': 1, 'MCX': 1, '360ONE': 1, 'TIINDIA': 1, 'BAJAJHLDNG': 1, 'IEX': 1, 'PNB': 1, 'ICICIGI': 1, 'LICHSGFIN': 1, 'ZYDUSLIFE': 1, 'ONGC': 1, 'HINDZINC': 1, 'DALBHARAT': 1, 'INOXWIND': 1, 'COALINDIA': 1, 'COFORGE': 1, 'VEDL': 1, 'IREDA': 1, 'INDUSTOWER': 1, 'HAL': 1, 'DELHIVERY': 1, 'COLPAL': 1, 'ASHOKLEY': 1, 'INDUSINDBK': 1, 'NTPC': 1, 'KOTAKBANK': 1, 'RVNL': 1, 'SWIGGY': 1, 'CUMMINSIND': 1, 'MANAPPURAM': 1, 'POWERGRID': 1, 'WIPRO': 1, 'TECHM': 1, 'GMRAIRPORT': 1, 'KEI': 1, 'CHOLAFIN': 1, 'HDFCLIFE': 1, 'APOLLOHOSP': 1, 'LTIM': 1, 'TORNTPOWER': 1, 'SIEMENS': 1, 'BEL': 1, 'ICICIBANK': 1, 'BSE': 1, 'INFY': 1, 'SAMMAANCAP': 1, 'YESBANK': 1, 'EICHERMOT': 1, 'MAZDOCK': 1, 'SBILIFE': 1, 'PAGEIND': 1}
+2026-01-05 18:50:16,694 - INFO - 
+LONG Step 2 - Filtered DataFrame:          Symbol  %chng              From CSV  %chng in OI
+15   BANKBARODA   0.64  T20-GL-gainers-FOSec         3.76
+23     HINDALCO   0.57  T20-GL-gainers-FOSec         3.25
+37    ABCAPITAL   0.86  T20-GL-gainers-FOSec        10.90
+43     ANGELONE   0.59  T20-GL-gainers-FOSec         3.76
+45    BANKINDIA   0.52  T20-GL-gainers-FOSec         9.32
+60     GODREJCP   0.50  T20-GL-gainers-FOSec         2.60
+68   POWERINDIA   0.99  T20-GL-gainers-FOSec         4.90
+100        SBIN   0.65  T20-GL-gainers-FOSec         9.73
+104         BSE   0.35  T20-GL-gainers-FOSec         3.88
+107      KAYNES   0.64  T20-GL-gainers-FOSec         5.97
+124     MAZDOCK   0.82  T20-GL-gainers-FOSec         3.68
+132       TITAN   0.60  T20-GL-gainers-FOSec         4.45
+142     SBILIFE   0.60  T20-GL-gainers-FOSec         8.21
+153    HDFCLIFE   0.76  T20-GL-gainers-FOSec         6.02
+157   PPLPHARMA   0.40  T20-GL-gainers-FOSec         7.36
+159         SRF   0.83  T20-GL-gainers-FOSec         7.76
+161   TATAELXSI   0.50  T20-GL-gainers-FOSec         9.64
+164  BAJAJHLDNG   0.96  T20-GL-gainers-FOSec        11.65
+167     HAVELLS   0.94  T20-GL-gainers-FOSec         4.43
+171     ICICIGI   0.54  T20-GL-gainers-FOSec         2.13
+172   ZYDUSLIFE   0.56  T20-GL-gainers-FOSec         4.70
+
+2026-01-05 18:50:16,696 - INFO - 
+LONG  Step 3 - Final Dictionary: {'BANKBARODA': 4, 'HINDALCO': 4, 'ABCAPITAL': 2, 'ANGELONE': 2, 'BANKINDIA': 4, 'GODREJCP': 3, 'POWERINDIA': 2, 'SBIN': 2, 'BSE': 1, 'KAYNES': 2, 'MAZDOCK': 1, 'TITAN': 2, 'SBILIFE': 1, 'HDFCLIFE': 1, 'PPLPHARMA': 2, 'SRF': 2, 'TATAELXSI': 3, 'BAJAJHLDNG': 1, 'HAVELLS': 2, 'ICICIGI': 1, 'ZYDUSLIFE': 1}
+
+2026-01-05 18:50:16,696 - INFO - For LONG Step 4- After sorting: {'BANKBARODA': 4, 'HINDALCO': 4, 'BANKINDIA': 4, 'GODREJCP': 3, 'TATAELXSI': 3, 'ABCAPITAL': 2, 'ANGELONE': 2, 'POWERINDIA': 2, 'SBIN': 2, 'KAYNES': 2, 'TITAN': 2, 'PPLPHARMA': 2, 'SRF': 2, 'HAVELLS': 2, 'BSE': 1, 'MAZDOCK': 1, 'SBILIFE': 1, 'HDFCLIFE': 1, 'BAJAJHLDNG': 1, 'ICICIGI': 1, 'ZYDUSLIFE': 1}
+
+2026-01-05 18:50:16,774 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-05 18:50:16,774 - INFO - SHORT Step 1 - Occurrences of Symbol: {'PERSISTENT': 4, 'TECHM': 3, 'INDUSTOWER': 3, 'TCS': 3, 'HCLTECH': 3, 'BPCL': 3, 'OFSS': 3, 'COFORGE': 3, 'VBL': 3, 'ONGC': 2, 'HINDPETRO': 2, 'KPITTECH': 2, 'NTPC': 2, 'OIL': 2, 'WIPRO': 2, 'IOC': 2, 'GAIL': 2, 'DIXON': 2, 'BOSCHLTD': 2, 'RELIANCE': 2, 'INFY': 2, 'BAJFINANCE': 2, 'POLICYBZR': 2, 'SWIGGY': 2, 'DRREDDY': 2, 'INDHOTEL': 1, 'KALYANKJIL': 1, 'MANAPPURAM': 1, 'LUPIN': 1, 'MANKIND': 1, 'IDFCFIRSTB': 1, 'HUDCO': 1, 'CHOLAFIN': 1, 'TIINDIA': 1, 'UNITDSPR': 1, 'PAGEIND': 1, 'SBICARD': 1, 'NAUKRI': 1, 'SYNGENE': 1, 'HDFCLIFE': 1, 'CONCOR': 1, 'BIOCON': 1, 'BLUESTARCO': 1, 'INOXWIND': 1, 'ANGELONE': 1, 'DALBHARAT': 1, 'CGPOWER': 1, 'CAMS': 1, 'LICHSGFIN': 1, 'ABB': 1, 'ITC': 1, 'JUBLFOOD': 1, 'IRCTC': 1, 'TITAN': 1, 'HDFCAMC': 1, 'MARICO': 1, 'GODREJCP': 1, 'BAJAJHLDNG': 1, 'HDFCBANK': 1, 'POLYCAB': 1, 'WAAREEENER': 1, 'PREMIERENE': 1, 'MCX': 1, 'ASHOKLEY': 1, 'RBLBANK': 1, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'RVNL': 1, 'SUZLON': 1, 'CUMMINSIND': 1, 'JIOFIN': 1, 'DMART': 1, 'IRFC': 1, 'KAYNES': 1, 'IREDA': 1, 'LICI': 1, 'FEDERALBNK': 1, 'MAXHEALTH': 1, 'TATAPOWER': 1, 'DABUR': 1}
+2026-01-05 18:50:16,810 - INFO - 
+SHORT Step 2 - Filtered DataFrame:          Symbol  %chng              From CSV  %chng in OI
+6       DRREDDY  -0.72  T20-GL-loosers-FOSec         3.71
+8     POLICYBZR  -0.59  T20-GL-loosers-FOSec         9.38
+18     RELIANCE  -0.96  T20-GL-loosers-FOSec         6.01
+24      POLYCAB  -0.53  T20-GL-loosers-FOSec        12.96
+29         NTPC  -0.45  T20-GL-loosers-FOSec         9.11
+31        DIXON  -0.90  T20-GL-loosers-FOSec         4.36
+39    HINDPETRO  -0.98  T20-GL-loosers-FOSec         6.84
+41          MCX  -0.81  T20-GL-loosers-FOSec         3.52
+42     ASHOKLEY  -0.55  T20-GL-loosers-FOSec         2.30
+44      COFORGE  -0.50  T20-GL-loosers-FOSec         4.51
+50   APOLLOHOSP  -0.60  T20-GL-loosers-FOSec         2.66
+54          PFC  -0.48  T20-GL-loosers-FOSec         3.12
+55   INDUSINDBK  -0.51  T20-GL-loosers-FOSec         2.78
+59       JIOFIN  -0.55  T20-GL-loosers-FOSec         3.06
+61         IRFC  -0.72  T20-GL-loosers-FOSec         2.32
+65     BOSCHLTD  -0.88  T20-GL-loosers-FOSec        16.69
+77        TECHM  -0.82  T20-GL-loosers-FOSec         5.22
+81      CGPOWER  -0.48  T20-GL-loosers-FOSec         4.81
+85     CHOLAFIN  -0.43  T20-GL-loosers-FOSec         2.12
+87     INDHOTEL  -0.62  T20-GL-loosers-FOSec         5.65
+92      PAGEIND  -0.45  T20-GL-loosers-FOSec         5.33
+95         OFSS  -0.68  T20-GL-loosers-FOSec         5.67
+100      CONCOR  -0.53  T20-GL-loosers-FOSec         2.56
+101      BIOCON  -0.37  T20-GL-loosers-FOSec         3.19
+103   DALBHARAT  -0.43  T20-GL-loosers-FOSec         2.42
+104         ABB  -0.77  T20-GL-loosers-FOSec         2.72
+105        CAMS  -0.93  T20-GL-loosers-FOSec         2.87
+107     MANKIND  -0.39  T20-GL-loosers-FOSec         5.12
+108     SYNGENE  -0.55  T20-GL-loosers-FOSec         3.03
+
+2026-01-05 18:50:16,810 - INFO - 
+SHORT  Step 3 - Final Dictionary: {'DRREDDY': 2, 'POLICYBZR': 2, 'RELIANCE': 2, 'POLYCAB': 1, 'NTPC': 2, 'DIXON': 2, 'HINDPETRO': 2, 'MCX': 1, 'ASHOKLEY': 1, 'COFORGE': 3, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'JIOFIN': 1, 'IRFC': 1, 'BOSCHLTD': 2, 'TECHM': 3, 'CGPOWER': 1, 'CHOLAFIN': 1, 'INDHOTEL': 1, 'PAGEIND': 1, 'OFSS': 3, 'CONCOR': 1, 'BIOCON': 1, 'DALBHARAT': 1, 'ABB': 1, 'CAMS': 1, 'MANKIND': 1, 'SYNGENE': 1}
+
+2026-01-05 18:50:16,810 - INFO - For SHORT Step 4- After sorting: {'COFORGE': 3, 'TECHM': 3, 'OFSS': 3, 'DRREDDY': 2, 'POLICYBZR': 2, 'RELIANCE': 2, 'NTPC': 2, 'DIXON': 2, 'HINDPETRO': 2, 'BOSCHLTD': 2, 'POLYCAB': 1, 'MCX': 1, 'ASHOKLEY': 1, 'APOLLOHOSP': 1, 'PFC': 1, 'INDUSINDBK': 1, 'JIOFIN': 1, 'IRFC': 1, 'CGPOWER': 1, 'CHOLAFIN': 1, 'INDHOTEL': 1, 'PAGEIND': 1, 'CONCOR': 1, 'BIOCON': 1, 'DALBHARAT': 1, 'ABB': 1, 'CAMS': 1, 'MANKIND': 1, 'SYNGENE': 1}
+
+2026-01-05 18:50:16,823 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,823 - INFO - For file MW-NIFTY-LG-NIFTY_CHEMICALS.csv: min= -2.46 and max= 3.19 
+2026-01-05 18:50:16,830 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,833 - INFO - For file MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv: min= -1.58 and max= 4.52 
+2026-01-05 18:50:16,839 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,839 - INFO - For file MW-NIFTY-LG-NIFTY_FMCG.csv: min= -1.1 and max= 2.76 
+2026-01-05 18:50:16,848 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,851 - INFO - For file MW-NIFTY-LG-NIFTY_MEDIA.csv: min= -1.58 and max= 3.69 
+2026-01-05 18:50:16,857 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,859 - INFO - For file MW-NIFTY-LG-NIFTY_METAL.csv: min= -0.95 and max= 2.45 
+2026-01-05 18:50:16,865 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,865 - INFO - For file MW-NIFTY-LG-NIFTY_PSU_BANK.csv: min= -1.8 and max= 3.78 
+2026-01-05 18:50:16,874 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,876 - INFO - For file MW-NIFTY-LG-NIFTY_REALTY.csv: min= 0.29 and max= 6.8 
+2026-01-05 18:50:16,883 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,883 - INFO - For file MW-NIFTY-ST-NIFTY_IT.csv: min= -2.23 and max= 0.13 
+2026-01-05 18:50:16,894 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,894 - INFO - For file MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv: min= -3.31 and max= 4.17 
+2026-01-05 18:50:16,904 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,904 - INFO - For file MW-NIFTY-ST-NIFTY_OIL_AND_GAS.csv: min= -2.02 and max= 1.31 
+2026-01-05 18:50:16,913 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,913 - INFO - For file MW-Pre-Open-Market.csv: min= -1.28 and max= 2.36 
+2026-01-05 18:50:16,920 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,923 - INFO - For file Spurts-in-OI-By-Underlying.csv: min= 0.08 and max= 184.18 
+2026-01-05 18:50:16,934 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,934 - INFO - For file T20-GL-gainers-FOSec.csv: min= 0.35 and max= 4.52 
+2026-01-05 18:50:16,937 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,937 - INFO - For file T20-GL-gainers-FOSecP.csv: min= 0.35 and max= 8.09 
+2026-01-05 18:50:16,955 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,955 - INFO - For file T20-GL-loosers-FOSec.csv: min= -6.96 and max= -0.35 
+2026-01-05 18:50:16,961 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-05 18:50:16,961 - INFO - For file T20-GL-loosers-FOSecP.csv: min= -3.75 and max= -0.35 

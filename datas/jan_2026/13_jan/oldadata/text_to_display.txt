@@ -1,0 +1,7 @@
+For LONG
+, Opperunities can be here:   {'JIOFIN': 3, 'RVNL': 2, 'CDSL': 2, 'APLAPOLLO': 2, 'KEI': 2, 'BHARTIARTL': 1, 'LICI': 1, 'GLENMARK': 1, 'MANKIND': 1}
+
+For SHORT
+, Opperunities can be here:   {'PPLPHARMA': 4, 'FEDERALBNK': 3, 'SONACOMS': 3, 'SWIGGY': 2, 'BRITANNIA': 2, 'POLYCAB': 2, 'CHOLAFIN': 2, 'LTF': 2, 'ADANIENSOL': 2, 'INOXWIND': 2}
+
+For file=> MW-NIFTY-LG-NIFTY_FINSRV25_50.csv:   min= 0.64 and max= 0.64For file=> MW-NIFTY-LG-NIFTY_FIN_SERVICE.csv:   min= 0.5 and max= 0.5For file=> MW-NIFTY-LG-NIFTY_FMCG.csv:   min= 0.59 and max= 0.59For file=> MW-NIFTY-LG-NIFTY_METAL.csv:   min= 1.99 and max= 1.99For file=> MW-NIFTY-LG-NIFTY_MS_FIN_SERV.csv:   min= 0.48 and max= 0.48For file=> MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv:   min= 0.54 and max= 0.54For file=> MW-NIFTY-LG-NIFTY_PSU_BANK.csv:   min= 0.65 and max= 0.65For file=> MW-NIFTY-ST-NIFTY500_HEALTH.csv:   min= -0.58 and max= -0.58For file=> MW-NIFTY-ST-NIFTY_MEDIA.csv:   min= -1.55 and max= -1.55For file=> MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv:   min= -0.86 and max= -0.86For file=> MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv:   min= -0.53 and max= -0.53For file=> MW-NIFTY-ST-NIFTY_REALTY.csv:   min= -1.22 and max= -1.22For file=> MW-Pre-Open-Market.csv:   min= -2.05 and max= 3.03For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.01 and max= 14.45For file=> T20-GL-gainers-FOSec.csv:   min= 0.35 and max= 4.78For file=> T20-GL-gainers-FOSecP.csv:   min= 0.5 and max= 1.85For file=> T20-GL-loosers-FOSec.csv:   min= -4.03 and max= -0.35For file=> T20-GL-loosers-FOSecP.csv:   min= -8.78 and max= -0.39

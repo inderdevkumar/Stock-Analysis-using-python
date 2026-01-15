@@ -1,0 +1,7 @@
+For LONG
+, Opperunities can be here:   {}
+
+For SHORT
+, Opperunities can be here:   {}
+
+For file=> MW-NIFTY-LG-NIFTY_FINSEREXBNK.csv:   min= 0.51 and max= 0.51For file=> MW-NIFTY-LG-NIFTY_MEDIA.csv:   min= 0.83 and max= 0.83For file=> MW-NIFTY-LG-NIFTY_MS_FIN_SERV.csv:   min= 0.62 and max= 0.62For file=> MW-NIFTY-LG-NIFTY_PSU_BANK.csv:   min= 0.64 and max= 0.64For file=> MW-NIFTY-ST-NIFTY_PHARMA.csv:   min= -0.49 and max= -0.49For file=> MW-Pre-Open-Market.csv:   min= -0.6 and max= 1.49For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.01 and max= 19.57For file=> T20-GL-gainers-FOSec.csv:   min= 0.36 and max= 3.26For file=> T20-GL-gainers-FOSecP.csv:   min= 0.35 and max= 4.78For file=> T20-GL-loosers-FOSec.csv:   min= -2.31 and max= -0.35For file=> T20-GL-loosers-FOSecP.csv:   min= -4.03 and max= -0.35

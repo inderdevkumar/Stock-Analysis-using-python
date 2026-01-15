@@ -1,0 +1,32 @@
+For LONG
+, Opperunities can be here:   {'ABB': 2}
+
+For SHORT
+, Opperunities can be here:   {'ZYDUSLIFE': 5}
+
+For file=> MW-NIFTY-ST-NIFTY500_HEALTH.csv:   min= -2.59 and max= 0.17
+
+For file=> MW-NIFTY-ST-NIFTY_CHEMICALS.csv:   min= -1.79 and max= 0.26
+
+For file=> MW-NIFTY-ST-NIFTY_HEALTHCARE.csv:   min= -1.92 and max= 0.0
+
+For file=> MW-NIFTY-ST-NIFTY_MEDIA.csv:   min= -2.41 and max= 0.25
+
+For file=> MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv:   min= -2.59 and max= 0.14
+
+For file=> MW-NIFTY-ST-NIFTY_PHARMA.csv:   min= -1.92 and max= 0.07
+
+For file=> MW-NIFTY-ST-NIFTY_REALTY.csv:   min= -3.04 and max= 1.15
+
+For file=> MW-Pre-Open-Market.csv:   min= -1.09 and max= 6.09
+
+For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.01 and max= 12.05
+
+For file=> T20-GL-gainers-FOSec.csv:   min= 0.39 and max= 2.84
+
+For file=> T20-GL-gainers-FOSecP.csv:   min= 0.5 and max= 1.85
+
+For file=> T20-GL-loosers-FOSec.csv:   min= -3.42 and max= -0.35
+
+For file=> T20-GL-loosers-FOSecP.csv:   min= -8.78 and max= -0.39
+

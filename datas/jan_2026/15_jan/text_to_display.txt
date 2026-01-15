@@ -1,0 +1,24 @@
+For LONG
+, Opperunities can be here:   {'MANAPPURAM': 3, 'COALINDIA': 2, 'PIIND': 2, 'POLICYBZR': 2, 'BAJAJHLDNG': 2, 'KPITTECH': 2, 'BLUESTARCO': 2, 'INFY': 1, 'SUZLON': 1}
+
+For SHORT
+, Opperunities can be here:   {'GODREJPROP': 4, 'CGPOWER': 3, 'DLF': 3, 'FEDERALBNK': 3, 'UNOMINDA': 3, 'OBEROIRLTY': 3, 'CHOLAFIN': 3, 'HDFCLIFE': 3, 'BHARATFORG': 3, 'ABB': 2, 'SWIGGY': 2, 'APOLLOHOSP': 2, 'SRF': 2, 'PIDILITIND': 2, 'COLPAL': 2, 'LICI': 2, 'LT': 1, 'INOXWIND': 1, 'NYKAA': 1, 'IRCTC': 1}
+
+For file=> MW-NIFTY-LG-NIFTY_METAL.csv:   min= -0.33 and max= 6.09
+For file=> MW-NIFTY-LG-NIFTY_MIDSML_HLTH.csv:   min= -2.71 and max= 3.03
+For file=> MW-NIFTY-LG-NIFTY_MS_FIN_SERV.csv:   min= -2.12 and max= 7.71
+For file=> MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv:   min= -1.97 and max= 2.87
+For file=> MW-NIFTY-LG-NIFTY_PSU_BANK.csv:   min= 0.15 and max= 7.71
+For file=> MW-NIFTY-ST-NIFTY_AUTO.csv:   min= -1.88 and max= 0.94
+For file=> MW-NIFTY-ST-NIFTY_CONSR_DURBL.csv:   min= -3.23 and max= 0.81
+For file=> MW-NIFTY-ST-NIFTY_FINSRV25_50.csv:   min= -2.12 and max= 2.96
+For file=> MW-NIFTY-ST-NIFTY_FMCG.csv:   min= -1.72 and max= 1.39
+For file=> MW-NIFTY-ST-NIFTY_IT.csv:   min= -2.82 and max= 0.62
+For file=> MW-NIFTY-ST-NIFTY_MS_IT_TELCM.csv:   min= -5.49 and max= 2.6
+For file=> MW-NIFTY-ST-NIFTY_REALTY.csv:   min= -2.74 and max= 1.12
+For file=> MW-Pre-Open-Market.csv:   min= -3.0 and max= 1.61
+For file=> Spurts-in-OI-By-Underlying.csv:   min= 0.01 and max= 577.43
+For file=> T20-GL-gainers-FOSec.csv:   min= 0.38 and max= 7.71
+For file=> T20-GL-gainers-FOSecP.csv:   min= 0.35 and max= 4.78
+For file=> T20-GL-loosers-FOSec.csv:   min= -5.49 and max= -0.35
+For file=> T20-GL-loosers-FOSecP.csv:   min= -4.03 and max= -0.35

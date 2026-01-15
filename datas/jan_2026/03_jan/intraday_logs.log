@@ -1,0 +1,106 @@
+2026-01-03 09:35:44,545 - INFO - 
+
+============ __init__ ==========
+2026-01-03 09:35:44,545 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\03_jan
+2026-01-03 09:35:45,935 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\03_jan' is ['intraday_logs.log', 'long_stocks.xlsx', 'MW-NIFTY-LG-NIFTY500_HEALTH.csv', 'MW-NIFTY-LG-NIFTY_AUTO.csv', 'MW-NIFTY-LG-NIFTY_BANK.csv', 'MW-NIFTY-LG-NIFTY_CONSR_DURBL.csv', 'MW-NIFTY-LG-NIFTY_FINSEREXBNK.csv', 'MW-NIFTY-LG-NIFTY_FINSRV25_50.csv', 'MW-NIFTY-LG-NIFTY_FIN_SERVICE.csv', 'MW-NIFTY-LG-NIFTY_HEALTHCARE.csv', 'MW-NIFTY-LG-NIFTY_MEDIA.csv', 'MW-NIFTY-LG-NIFTY_METAL.csv', 'MW-NIFTY-LG-NIFTY_MIDSML_HLTH.csv', 'MW-NIFTY-LG-NIFTY_MS_FIN_SERV.csv', 'MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv', 'MW-NIFTY-LG-NIFTY_PHARMA.csv', 'MW-NIFTY-LG-NIFTY_PSU_BANK.csv', 'MW-NIFTY-LG-NIFTY_REALTY.csv', 'MW-NIFTY-ST-NIFTY_FMCG.csv', 'MW-Pre-Open-Market.csv', 'short_stocks.xlsx', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-gainers-FOSecP.csv', 'T20-GL-loosers-FOSec.csv', 'T20-GL-loosers-FOSecP.csv']
+2026-01-03 09:35:45,935 - INFO - 'T20-GL-gainers-FOSecP' and 'T20-GL-loosers-FOSecP' files already present in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\03_jan'
+2026-01-03 09:35:45,935 - INFO - previous_day_gainers_loosers_present bool [True, True]
+2026-01-03 09:35:45,935 - INFO - 
+
+=============   test_oppertunity_in_long_and_short =========== 
+2026-01-03 09:35:45,935 - INFO - 
+
+=============   stocks_for_long =========== 
+2026-01-03 09:35:46,043 - INFO -          Symbol  %chng                       From CSV  %chng in OI
+0    INDUSTOWER   3.88          T20-GL-gainers-FOSecP         3.41
+1    INDUSTOWER   1.59           T20-GL-gainers-FOSec         3.41
+2    INDUSTOWER   0.50             MW-Pre-Open-Market         3.41
+3          INFY   0.87          T20-GL-gainers-FOSecP         4.40
+4          INFY   0.75           T20-GL-gainers-FOSec         4.40
+..          ...    ...                            ...          ...
+302      AUBANK   0.35             MW-Pre-Open-Market         2.79
+303     DRREDDY   0.34    MW-NIFTY-LG-NIFTY500_HEALTH        11.69
+304     DRREDDY   0.34       MW-NIFTY-LG-NIFTY_PHARMA        11.69
+305  IDFCFIRSTB   0.30         MW-NIFTY-LG-NIFTY_BANK         2.78
+306  IDFCFIRSTB   0.30  MW-NIFTY-LG-NIFTY_MS_FIN_SERV         2.78
+
+[307 rows x 4 columns]
+2026-01-03 09:35:46,365 - INFO - 
+
+=============   stocks_for_short =========== 
+2026-01-03 09:35:46,464 - INFO -         Symbol  %chng                      From CSV  %chng in OI
+0          ITC  -3.75         T20-GL-loosers-FOSecP        37.25
+1          ITC  -3.78          T20-GL-loosers-FOSec        37.25
+2          ITC  -1.06            MW-Pre-Open-Market        37.25
+3          ITC  -3.78        MW-NIFTY-ST-NIFTY_FMCG        37.25
+4   BAJAJ-AUTO  -0.74         T20-GL-loosers-FOSecP        13.27
+..         ...    ...                           ...          ...
+66   PPLPHARMA  -0.74  MW-NIFTY-LG-NIFTY_HEALTHCARE        13.52
+67     SYNGENE  -1.05  MW-NIFTY-LG-NIFTY_HEALTHCARE         8.60
+68       LUPIN  -1.09  MW-NIFTY-LG-NIFTY_HEALTHCARE         3.79
+69     MANKIND  -1.12  MW-NIFTY-LG-NIFTY_HEALTHCARE         3.48
+70       ALKEM  -1.53  MW-NIFTY-LG-NIFTY_HEALTHCARE         2.22
+
+[71 rows x 4 columns]
+2026-01-03 09:35:46,544 - INFO - LONG Step 1 - Occurrences of Symbol: {'PFC': 6, 'BSE': 6, 'ICICIPRULI': 6, 'ANGELONE': 5, 'FORTIS': 5, 'CHOLAFIN': 5, 'BANKINDIA': 5, 'MANKIND': 5, 'ALKEM': 5, 'SBIN': 5, 'SBILIFE': 4, 'CANBK': 4, 'INDIANB': 4, 'BAJFINANCE': 4, 'UNIONBANK': 4, 'HDFCBANK': 4, 'LTF': 4, 'JIOFIN': 4, 'MCX': 4, 'ICICIGI': 4, 'BANKBARODA': 4, 'HEROMOTOCO': 4, 'HINDALCO': 4, 'TVSMOTOR': 4, 'PPLPHARMA': 4, 'ZYDUSLIFE': 3, 'SYNGENE': 3, 'NATIONALUM': 3, 'TORNTPHARM': 3, 'HAVELLS': 3, 'INFY': 3, 'PAYTM': 3, 'DABUR': 3, 'HDFCAMC': 3, 'YESBANK': 3, 'SUNPHARMA': 3, 'PNB': 3, 'IOC': 3, 'CDSL': 3, 'CIPLA': 3, '360ONE': 3, 'IEX': 3, 'DIVISLAB': 3, 'UNOMINDA': 3, 'INDUSTOWER': 3, 'OBEROIRLTY': 3, 'POWERINDIA': 3, 'BHEL': 3, 'ASHOKLEY': 3, 'LODHA': 3, 'SUPREMEIND': 3, 'PATANJALI': 3, 'VOLTAS': 3, 'M&M': 3, 'BLUESTARCO': 3, 'IDFCFIRSTB': 2, 'KEI': 2, 'NTPC': 2, 'HUDCO': 2, 'POLYCAB': 2, 'ONGC': 2, 'KFINTECH': 2, 'POWERGRID': 2, 'BANDHANBNK': 2, 'CROMPTON': 2, 'PRESTIGE': 2, 'GRASIM': 2, 'KALYANKJIL': 2, 'PHOENIXLTD': 2, 'MOTHERSON': 2, 'SONACOMS': 2, 'LICI': 2, 'EXIDEIND': 2, 'COLPAL': 2, 'RBLBANK': 2, 'IREDA': 2, 'GAIL': 2, 'RELIANCE': 2, 'DIXON': 2, 'DRREDDY': 2, 'SHREECEM': 2, 'BOSCHLTD': 2, 'MPHASIS': 2, 'MARUTI': 2, 'TORNTPOWER': 2, 'NAUKRI': 2, 'PGEL': 2, 'SAMMAANCAP': 2, 'DLF': 2, 'HAL': 2, 'PREMIERENE': 1, 'COFORGE': 1, 'PIIND': 1, 'MFSL': 1, 'AUBANK': 1, 'DELHIVERY': 1, 'BAJAJ-AUTO': 1, 'TATATECH': 1, 'KOTAKBANK': 1, 'DMART': 1, 'APLAPOLLO': 1, 'PIDILITIND': 1, 'COALINDIA': 1, 'UPL': 1, 'GODREJCP': 1, 'SIEMENS': 1, 'KAYNES': 1, 'TATAPOWER': 1, 'LTIM': 1, 'TRENT': 1, 'TCS': 1, 'NHPC': 1, 'APOLLOHOSP': 1, 'ULTRACEMCO': 1, 'DALBHARAT': 1, 'TECHM': 1, 'CGPOWER': 1, 'INDHOTEL': 1, 'IRCTC': 1, 'MANAPPURAM': 1, 'TATAELXSI': 1, 'SWIGGY': 1, 'KPITTECH': 1, 'ASIANPAINT': 1}
+2026-01-03 09:35:46,544 - INFO - 
+LONG Step 2 - Filtered DataFrame:          Symbol  %chng              From CSV  %chng in OI
+4          INFY   0.75  T20-GL-gainers-FOSec         4.40
+50       GRASIM   0.47  T20-GL-gainers-FOSec         2.37
+100   PATANJALI   0.92  T20-GL-gainers-FOSec         5.40
+107  ICICIPRULI   0.59  T20-GL-gainers-FOSec         3.20
+113    SHREECEM   0.97  T20-GL-gainers-FOSec         7.22
+119    HDFCBANK   0.92  T20-GL-gainers-FOSec         2.08
+125       DIXON   0.60  T20-GL-gainers-FOSec         4.91
+127         MCX   0.96  T20-GL-gainers-FOSec       941.18
+153      KAYNES   0.87  T20-GL-gainers-FOSec        10.29
+155       CANBK   0.84  T20-GL-gainers-FOSec         7.70
+162         TCS   0.57  T20-GL-gainers-FOSec         2.93
+172         DLF   1.00  T20-GL-gainers-FOSec         6.58
+182         HAL   0.46  T20-GL-gainers-FOSec         2.63
+200   SUNPHARMA   0.51  T20-GL-gainers-FOSec         3.37
+206         IOC   0.48  T20-GL-gainers-FOSec         2.63
+215       CIPLA   0.61  T20-GL-gainers-FOSec         3.15
+220  ASIANPAINT   0.71  T20-GL-gainers-FOSec         5.37
+222         LTF   0.58  T20-GL-gainers-FOSec         2.60
+226  BANDHANBNK   0.53  T20-GL-gainers-FOSec         7.49
+233     HDFCAMC   0.41  T20-GL-gainers-FOSec         3.43
+244    DIVISLAB   0.76  T20-GL-gainers-FOSec         4.06
+248         IEX   0.82  T20-GL-gainers-FOSec         4.83
+253        LICI   0.96  T20-GL-gainers-FOSec         6.28
+255    KPITTECH   0.40  T20-GL-gainers-FOSec         7.96
+256   DALBHARAT   0.65  T20-GL-gainers-FOSec         4.21
+262  PIDILITIND   0.52  T20-GL-gainers-FOSec         3.54
+265     ICICIGI   0.77  T20-GL-gainers-FOSec         2.97
+273    PRESTIGE   0.99  T20-GL-gainers-FOSec         2.44
+275    KFINTECH   0.77  T20-GL-gainers-FOSec         3.86
+277       PIIND   0.93  T20-GL-gainers-FOSec         4.68
+278   DELHIVERY   0.91  T20-GL-gainers-FOSec         4.02
+284  TORNTPHARM   0.60  T20-GL-gainers-FOSec         4.21
+292     SYNGENE   0.89  T20-GL-gainers-FOSec         8.60
+
+2026-01-03 09:35:46,544 - INFO - 
+LONG  Step 3 - Final Dictionary: {'INFY': 3, 'GRASIM': 2, 'PATANJALI': 3, 'ICICIPRULI': 6, 'SHREECEM': 2, 'HDFCBANK': 4, 'DIXON': 2, 'MCX': 4, 'KAYNES': 1, 'CANBK': 4, 'TCS': 1, 'DLF': 2, 'HAL': 2, 'SUNPHARMA': 3, 'IOC': 3, 'CIPLA': 3, 'ASIANPAINT': 1, 'LTF': 4, 'BANDHANBNK': 2, 'HDFCAMC': 3, 'DIVISLAB': 3, 'IEX': 3, 'LICI': 2, 'KPITTECH': 1, 'DALBHARAT': 1, 'PIDILITIND': 1, 'ICICIGI': 4, 'PRESTIGE': 2, 'KFINTECH': 2, 'PIIND': 1, 'DELHIVERY': 1, 'TORNTPHARM': 3, 'SYNGENE': 3}
+
+2026-01-03 09:35:46,544 - INFO - For LONG Step 4- After sorting: {'ICICIPRULI': 6, 'HDFCBANK': 4, 'MCX': 4, 'CANBK': 4, 'LTF': 4, 'ICICIGI': 4, 'INFY': 3, 'PATANJALI': 3, 'SUNPHARMA': 3, 'IOC': 3, 'CIPLA': 3, 'HDFCAMC': 3, 'DIVISLAB': 3, 'IEX': 3, 'TORNTPHARM': 3, 'SYNGENE': 3, 'GRASIM': 2, 'SHREECEM': 2, 'DIXON': 2, 'DLF': 2, 'HAL': 2, 'BANDHANBNK': 2, 'LICI': 2, 'PRESTIGE': 2, 'KFINTECH': 2, 'KAYNES': 1, 'TCS': 1, 'ASIANPAINT': 1, 'KPITTECH': 1, 'DALBHARAT': 1, 'PIDILITIND': 1, 'PIIND': 1, 'DELHIVERY': 1}
+
+2026-01-03 09:35:46,589 - INFO - SHORT Step 1 - Occurrences of Symbol: {'ITC': 4, 'POLICYBZR': 4, 'AXISBANK': 4, 'KOTAKBANK': 4, 'LAURUSLABS': 3, 'DRREDDY': 3, 'BAJAJ-AUTO': 3, 'GODREJCP': 3, 'MOTHERSON': 2, 'TIINDIA': 2, 'MANAPPURAM': 2, 'TATACONSUM': 2, 'APLAPOLLO': 2, 'BRITANNIA': 2, 'UNITDSPR': 2, 'BAJAJHLDNG': 2, 'MPHASIS': 2, 'SWIGGY': 2, 'PGEL': 1, 'PPLPHARMA': 1, 'SYNGENE': 1, 'LUPIN': 1, 'DIVISLAB': 1, 'TORNTPHARM': 1, 'CIPLA': 1, 'MANKIND': 1, 'ZYDUSLIFE': 1, 'SUNPHARMA': 1, 'VOLTAS': 1, 'LTIM': 1, 'BLUESTARCO': 1, 'CROMPTON': 1, 'KALYANKJIL': 1, 'DALBHARAT': 1, 'BAJAJFINSV': 1, 'INDHOTEL': 1, 'WAAREEENER': 1, 'HDFCAMC': 1, 'PERSISTENT': 1, 'KAYNES': 1, 'ALKEM': 1}
+2026-01-03 09:35:46,592 - INFO - 
+SHORT Step 2 - Filtered DataFrame:         Symbol  %chng              From CSV  %chng in OI
+5   BAJAJ-AUTO  -0.62  T20-GL-loosers-FOSec        13.27
+9       SWIGGY  -0.93  T20-GL-loosers-FOSec        44.90
+20    GODREJCP  -0.60  T20-GL-loosers-FOSec         3.07
+23     MPHASIS  -0.62  T20-GL-loosers-FOSec         4.51
+26    AXISBANK  -0.42  T20-GL-loosers-FOSec         4.39
+37   MOTHERSON  -0.42  T20-GL-loosers-FOSec         6.58
+39   BRITANNIA  -0.36  T20-GL-loosers-FOSec         6.90
+43  TATACONSUM  -0.43  T20-GL-loosers-FOSec        10.04
+45  MANAPPURAM  -0.99  T20-GL-loosers-FOSec         7.89
+47        LTIM  -0.43  T20-GL-loosers-FOSec         7.37
+48     TIINDIA  -0.69  T20-GL-loosers-FOSec         4.33
+
+2026-01-03 09:35:46,592 - INFO - 
+SHORT  Step 3 - Final Dictionary: {'BAJAJ-AUTO': 3, 'SWIGGY': 2, 'GODREJCP': 3, 'MPHASIS': 2, 'AXISBANK': 4, 'MOTHERSON': 2, 'BRITANNIA': 2, 'TATACONSUM': 2, 'MANAPPURAM': 2, 'LTIM': 1, 'TIINDIA': 2}
+
+2026-01-03 09:35:46,592 - INFO - For SHORT Step 4- After sorting: {'AXISBANK': 4, 'BAJAJ-AUTO': 3, 'GODREJCP': 3, 'SWIGGY': 2, 'MPHASIS': 2, 'MOTHERSON': 2, 'BRITANNIA': 2, 'TATACONSUM': 2, 'MANAPPURAM': 2, 'TIINDIA': 2, 'LTIM': 1}
+

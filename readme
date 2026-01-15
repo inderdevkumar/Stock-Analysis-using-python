@@ -1,0 +1,10 @@
+"""
+  (venv) E:\inder_dont_delete>streamlit run utilities_python\share_stock_market\equity_nse\web_app_nse.py
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.7:8501
+
+  ctrl+c to end
+
+"""

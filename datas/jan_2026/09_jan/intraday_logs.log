@@ -1,0 +1,647 @@
+2026-01-09 09:46:34,597 - INFO - 
+
+============ __init__ ==========
+2026-01-09 09:46:34,599 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\09_jan
+2026-01-09 09:46:34,599 - INFO - 
+
+================ pre_open_market ===========
+2026-01-09 09:46:34,646 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-09 09:46:35,310 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 32811
+2026-01-09 09:46:35,437 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:35,668 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-09 09:46:35,668 - INFO -        Symbol  %chng
+0        IDEA   6.09
+1  INDUSTOWER   4.44
+2        BHEL   2.67
+3    PETRONET   1.59
+4         ABB   0.58
+2026-01-09 09:46:37,787 - INFO - 
+
+================ oi_spurts ===========
+2026-01-09 09:46:37,951 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 12035
+2026-01-09 09:46:37,969 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:37,990 - INFO - Index(['Symbol', '%chng in OI'], dtype='object')
+2026-01-09 09:46:37,992 - INFO -        Symbol  %chng in OI
+0  POWERINDIA        20.52
+1       NIFTY        18.72
+2    FINNIFTY        10.94
+3        BHEL        10.88
+4     CGPOWER         7.86
+2026-01-09 09:46:40,037 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-09 09:46:40,037 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-09 09:46:40,217 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1381
+2026-01-09 09:46:40,219 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:40,227 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-09 09:46:40,229 - INFO -                index  pChange
+0         NIFTY AUTO    -0.20
+1         NIFTY BANK    -0.36
+2  NIFTY FIN SERVICE    -0.42
+3  NIFTY FINSRV25 50    -0.57
+4         NIFTY FMCG    -0.12
+2026-01-09 09:46:40,257 - INFO - Sectors for long: ['NIFTY IT' 'NIFTY PSU BANK'], for short: ['NIFTY FINSRV25 50' 'NIFTY MEDIA' 'NIFTY PHARMA' 'NIFTY REALTY'
+ 'NIFTY PVT BANK' 'NIFTY HEALTHCARE' 'NIFTY MIDSML HLTH' 'NIFTY CHEMICALS'
+ 'NIFTY500 HEALTH' 'NIFTY FINSEREXBNK']
+2026-01-09 09:46:48,621 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FINSRV25%2050 HTTP/1.1" 200 1161
+2026-01-09 09:46:48,623 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:48,633 - INFO -        Symbol %chng
+0  BAJFINANCE  0.93
+1  ICICIPRULI  0.65
+2        SBIN  0.44
+3  MUTHOOTFIN  0.13
+4   LICHSGFIN  0.08
+2026-01-09 09:46:52,900 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20IT HTTP/1.1" 200 674
+2026-01-09 09:46:52,914 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:52,924 - INFO -     Symbol %chng
+0  HCLTECH  1.39
+1    TECHM  1.30
+2  COFORGE  1.21
+3     INFY  0.63
+4     LTIM  0.53
+2026-01-09 09:46:55,134 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 692
+2026-01-09 09:46:55,136 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:55,142 - INFO -       Symbol  %chng
+0  TIPSMUSIC   0.52
+1   SAREGAMA  -0.26
+2     PFOCUS  -0.40
+3       ZEEL  -0.54
+4     NAZARA  -0.93
+2026-01-09 09:46:59,371 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PHARMA HTTP/1.1" 200 1167
+2026-01-09 09:46:59,376 - INFO - Attempt 1: Status 200
+2026-01-09 09:46:59,382 - INFO -       Symbol  %chng
+0    DRREDDY   0.33
+1      CIPLA   0.16
+2   DIVISLAB  -0.44
+3  ZYDUSLIFE  -0.64
+4  SUNPHARMA  -0.65
+2026-01-09 09:47:01,727 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 747
+2026-01-09 09:47:01,728 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:01,728 - INFO -        Symbol %chng
+0     INDIANB  1.61
+1   UNIONBANK  1.04
+2    MAHABANK  0.87
+3  BANKBARODA  0.60
+4       CANBK  0.58
+2026-01-09 09:47:04,074 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 696
+2026-01-09 09:47:04,074 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:04,087 - INFO -        Symbol  %chng
+0   SIGNATURE   1.68
+1  PHOENIXLTD  -0.47
+2    ANANTRAJ  -0.52
+3     BRIGADE  -1.35
+4  OBEROIRLTY  -1.59
+2026-01-09 09:47:06,542 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PVT%20BANK HTTP/1.1" 200 701
+2026-01-09 09:47:06,544 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:06,549 - INFO -        Symbol  %chng
+0     YESBANK   0.66
+1     RBLBANK   0.32
+2  FEDERALBNK   0.31
+3  INDUSINDBK   0.25
+4   KOTAKBANK  -0.28
+2026-01-09 09:47:08,763 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20HEALTHCARE HTTP/1.1" 200 1187
+2026-01-09 09:47:08,767 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:08,771 - INFO -        Symbol  %chng
+0     DRREDDY   0.30
+1       CIPLA   0.18
+2  APOLLOHOSP  -0.33
+3      FORTIS  -0.38
+4    DIVISLAB  -0.43
+2026-01-09 09:47:12,856 - INFO - 
+
+============ __init__ ==========
+2026-01-09 09:47:12,861 - INFO - Created folder: E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\09_jan
+2026-01-09 09:47:12,861 - INFO - 
+
+================ pre_open_market ===========
+2026-01-09 09:47:12,879 - DEBUG - Starting new HTTPS connection (1): www.nseindia.com:443
+2026-01-09 09:47:13,715 - DEBUG - https://www.nseindia.com:443 "GET /api/market-data-pre-open?key=FO HTTP/1.1" 200 32811
+2026-01-09 09:47:13,795 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:13,841 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-09 09:47:13,841 - INFO -        Symbol  %chng
+0        IDEA   6.09
+1  INDUSTOWER   4.44
+2        BHEL   2.67
+3    PETRONET   1.59
+4         ABB   0.58
+2026-01-09 09:47:14,951 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MIDSML%20HLTH HTTP/1.1" 200 1639
+2026-01-09 09:47:14,955 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:14,962 - INFO -        Symbol  %chng
+0  NATCOPHARM   0.41
+1  NEULANDLAB   0.26
+2     POLYMED   0.24
+3      PFIZER   0.22
+4        KIMS  -0.02
+2026-01-09 09:47:15,873 - INFO - 
+
+================ oi_spurts ===========
+2026-01-09 09:47:16,036 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-oi-spurts-underlyings HTTP/1.1" 200 12035
+2026-01-09 09:47:16,064 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:16,077 - INFO - Index(['Symbol', '%chng in OI'], dtype='object')
+2026-01-09 09:47:16,077 - INFO -        Symbol  %chng in OI
+0  POWERINDIA        20.52
+1       NIFTY        18.72
+2    FINNIFTY        10.94
+3        BHEL        10.88
+4     CGPOWER         7.86
+2026-01-09 09:47:17,171 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CHEMICALS HTTP/1.1" 200 1168
+2026-01-09 09:47:17,171 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:17,171 - INFO -        Symbol  %chng
+0    SUMICHEM   0.44
+1  COROMANDEL  -0.05
+2  LINDEINDIA  -0.05
+3   BAYERCROP  -0.12
+4    SWANCORP  -0.17
+2026-01-09 09:47:18,113 - INFO - 
+
+================ each_sectors_stocks ===========
+2026-01-09 09:47:18,113 - INFO - 
+
+================ sectors_heatmap ===========
+2026-01-09 09:47:18,240 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-index?type=Sectoral%20Indices HTTP/1.1" 200 1392
+2026-01-09 09:47:18,241 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:18,247 - INFO - Index(['index', 'indexLongName', 'current', 'open', 'close', 'high', 'low',
+       'pChange', 'yrHigh', 'yrLow', 'timeStamp'],
+      dtype='object')
+2026-01-09 09:47:18,247 - INFO -                index  pChange
+0         NIFTY AUTO    -0.15
+1         NIFTY BANK    -0.32
+2  NIFTY FIN SERVICE    -0.35
+3  NIFTY FINSRV25 50    -0.50
+4         NIFTY FMCG    -0.07
+2026-01-09 09:47:18,259 - INFO - Sectors for long: ['NIFTY IT' 'NIFTY PSU BANK' 'NIFTY OIL AND GAS'], for short: ['NIFTY FINSRV25 50' 'NIFTY MEDIA' 'NIFTY PHARMA' 'NIFTY REALTY'
+ 'NIFTY PVT BANK' 'NIFTY HEALTHCARE' 'NIFTY MIDSML HLTH' 'NIFTY CHEMICALS'
+ 'NIFTY500 HEALTH']
+2026-01-09 09:47:19,648 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY500%20HEALTH HTTP/1.1" 200 2555
+2026-01-09 09:47:19,650 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:19,656 - INFO -        Symbol %chng
+0  NATCOPHARM  0.62
+1  NEULANDLAB  0.39
+2     POLYMED  0.37
+3      PFIZER  0.33
+4     DRREDDY  0.30
+2026-01-09 09:47:22,102 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FINSEREXBNK HTTP/1.1" 200 1619
+2026-01-09 09:47:22,111 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:22,119 - INFO -        Symbol %chng
+0         IEX  3.46
+1  BAJFINANCE  0.82
+2  ICICIPRULI  0.68
+3  MUTHOOTFIN  0.18
+4   LICHSGFIN  0.13
+2026-01-09 09:47:26,513 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20FINSRV25%2050 HTTP/1.1" 200 1161
+2026-01-09 09:47:26,517 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:26,525 - INFO -        Symbol %chng
+0  BAJFINANCE  0.93
+1  ICICIPRULI  0.65
+2        SBIN  0.44
+3  MUTHOOTFIN  0.13
+4   LICHSGFIN  0.08
+2026-01-09 09:47:28,174 - INFO - 
+
+================ gainers_loosers ===========
+2026-01-09 09:47:28,767 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-stocksTraded HTTP/1.1" 200 None
+2026-01-09 09:47:28,898 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:29,034 - INFO - Index(['symbol', 'pchange'], dtype='object')
+2026-01-09 09:47:29,038 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-09 09:47:29,038 - INFO -        Symbol  %chng
+0        IDEA   2.70
+1     ETERNAL   2.80
+2  INDUSTOWER   2.24
+3  HINDCOPPER   1.12
+4        BHEL   1.77
+2026-01-09 09:47:30,913 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20IT HTTP/1.1" 200 675
+2026-01-09 09:47:30,915 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:30,923 - INFO -     Symbol %chng
+0  COFORGE  1.40
+1  HCLTECH  1.37
+2    TECHM  1.32
+3     LTIM  0.91
+4  MPHASIS  0.65
+2026-01-09 09:47:31,340 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\09_jan' is ['intraday_logs.log', 'MW-NIFTY-LG-NIFTY_IT.csv', 'MW-NIFTY-LG-NIFTY_PSU_BANK.csv', 'MW-NIFTY-ST-NIFTY500_HEALTH.csv', 'MW-NIFTY-ST-NIFTY_CHEMICALS.csv', 'MW-NIFTY-ST-NIFTY_FINSEREXBNK.csv', 'MW-NIFTY-ST-NIFTY_FINSRV25_50.csv', 'MW-NIFTY-ST-NIFTY_HEALTHCARE.csv', 'MW-NIFTY-ST-NIFTY_MEDIA.csv', 'MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv', 'MW-NIFTY-ST-NIFTY_PHARMA.csv', 'MW-NIFTY-ST-NIFTY_PVT_BANK.csv', 'MW-NIFTY-ST-NIFTY_REALTY.csv', 'MW-Pre-Open-Market.csv', 'olddata', 'olddata930', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-loosers-FOSec.csv']
+2026-01-09 09:47:31,346 - INFO - Copied: T20-GL-gainers-FOSecP.csv
+2026-01-09 09:47:31,441 - INFO - Copied: T20-GL-loosers-FOSecP.csv
+2026-01-09 09:47:31,441 - INFO - 
+
+=============   test_oppertunity_in_long_and_short =========== 
+2026-01-09 09:47:31,443 - INFO - 
+
+=============   stocks_for_long =========== 
+2026-01-09 09:47:33,083 - INFO -         Symbol  %chng                       From CSV  %chng in OI
+0   INDUSTOWER   0.70          T20-GL-gainers-FOSecP         4.92
+1   INDUSTOWER   2.24           T20-GL-gainers-FOSec         4.92
+2   INDUSTOWER   4.44             MW-Pre-Open-Market         4.92
+3         BHEL   1.77           T20-GL-gainers-FOSec        10.88
+4         BHEL   2.67             MW-Pre-Open-Market        10.88
+5          IEX   3.28           T20-GL-gainers-FOSec         3.11
+6          IEX   3.46  MW-NIFTY-ST-NIFTY_FINSEREXBNK         3.11
+7     HINDZINC   2.17           T20-GL-gainers-FOSec         5.72
+8          BDL   1.03           T20-GL-gainers-FOSec         2.00
+9          OIL   2.09           T20-GL-gainers-FOSec         2.89
+10         OIL   0.50             MW-Pre-Open-Market         2.89
+11         ABB   0.58             MW-Pre-Open-Market         3.65
+12   EICHERMOT   0.41             MW-Pre-Open-Market         2.68
+13  POWERINDIA   0.30             MW-Pre-Open-Market        20.52
+2026-01-09 09:47:33,335 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MEDIA HTTP/1.1" 200 692
+2026-01-09 09:47:33,346 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:33,353 - INFO -       Symbol  %chng
+0  TIPSMUSIC   0.52
+1   SAREGAMA  -0.26
+2     PFOCUS  -0.40
+3       ZEEL  -0.54
+4     NAZARA  -0.93
+2026-01-09 09:47:37,535 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PHARMA HTTP/1.1" 200 1193
+2026-01-09 09:47:37,545 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:37,553 - INFO -       Symbol  %chng
+0    DRREDDY   0.33
+1      CIPLA   0.16
+2   DIVISLAB  -0.44
+3  ZYDUSLIFE  -0.64
+4  SUNPHARMA  -0.65
+2026-01-09 09:47:39,435 - INFO - 
+
+=============   stocks_for_short =========== 
+2026-01-09 09:47:39,731 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PSU%20BANK HTTP/1.1" 200 759
+2026-01-09 09:47:39,734 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:39,739 - INFO -        Symbol %chng
+0     INDIANB  1.57
+1   UNIONBANK  0.99
+2    MAHABANK  0.87
+3  BANKBARODA  0.60
+4       CANBK  0.56
+2026-01-09 09:47:39,826 - INFO -         Symbol  %chng                      From CSV  %chng in OI
+0         BHEL  -8.78         T20-GL-loosers-FOSecP        10.88
+1     HINDZINC  -6.35         T20-GL-loosers-FOSecP         5.72
+2     HINDZINC  -0.44            MW-Pre-Open-Market         5.72
+3      CGPOWER  -3.68         T20-GL-loosers-FOSecP         7.86
+4      CGPOWER  -4.00          T20-GL-loosers-FOSec         7.86
+5       SWIGGY  -2.76         T20-GL-loosers-FOSecP         3.58
+6   WAAREEENER  -2.59         T20-GL-loosers-FOSecP         3.56
+7   WAAREEENER  -2.61          T20-GL-loosers-FOSec         3.56
+8   WAAREEENER  -0.96            MW-Pre-Open-Market         3.56
+9          IEX  -3.47         T20-GL-loosers-FOSecP         3.11
+10         ABB  -4.96         T20-GL-loosers-FOSecP         3.65
+11  POWERINDIA  -6.10         T20-GL-loosers-FOSecP        20.52
+12  POWERINDIA  -5.19          T20-GL-loosers-FOSec        20.52
+13     POLYCAB  -1.66         T20-GL-loosers-FOSecP         2.21
+14     POLYCAB  -0.47          T20-GL-loosers-FOSec         2.21
+15       LODHA  -2.16         T20-GL-loosers-FOSecP         3.22
+16       LODHA  -2.61          T20-GL-loosers-FOSec         3.22
+17       LODHA  -0.75            MW-Pre-Open-Market         3.22
+18       LODHA  -2.54      MW-NIFTY-ST-NIFTY_REALTY         3.22
+19    ADANIENT  -2.85         T20-GL-loosers-FOSecP         2.32
+20    ADANIENT  -1.51          T20-GL-loosers-FOSec         2.32
+21         OIL  -2.49         T20-GL-loosers-FOSecP         2.89
+22  GODREJPROP  -2.25         T20-GL-loosers-FOSecP         6.59
+23  GODREJPROP  -3.58          T20-GL-loosers-FOSec         6.59
+24  GODREJPROP  -3.58      MW-NIFTY-ST-NIFTY_REALTY         6.59
+25    PRESTIGE  -2.20         T20-GL-loosers-FOSecP         2.59
+26    PRESTIGE  -2.18          T20-GL-loosers-FOSec         2.59
+27    PRESTIGE  -2.18      MW-NIFTY-ST-NIFTY_REALTY         2.59
+28   ZYDUSLIFE  -2.11         T20-GL-loosers-FOSecP         2.68
+29   ZYDUSLIFE  -0.64          T20-GL-loosers-FOSec         2.68
+30   ZYDUSLIFE  -0.56   MW-NIFTY-ST-NIFTY500_HEALTH         2.68
+31   ZYDUSLIFE  -0.56  MW-NIFTY-ST-NIFTY_HEALTHCARE         2.68
+32   ZYDUSLIFE  -0.64      MW-NIFTY-ST-NIFTY_PHARMA         2.68
+33  OBEROIRLTY  -1.62          T20-GL-loosers-FOSec         2.60
+34  OBEROIRLTY  -1.59      MW-NIFTY-ST-NIFTY_REALTY         2.60
+2026-01-09 09:47:40,395 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-09 09:47:40,438 - INFO - LONG Step 1 - Occurrences of Symbol: {'INDUSTOWER': 3, 'BHEL': 2, 'IEX': 2, 'OIL': 2, 'HINDZINC': 1, 'BDL': 1, 'ABB': 1, 'EICHERMOT': 1, 'POWERINDIA': 1}
+2026-01-09 09:47:40,442 - INFO - 
+LONG Step 2 - Filtered DataFrame: Empty DataFrame
+Columns: [Symbol, %chng, From CSV, %chng in OI]
+Index: []
+
+2026-01-09 09:47:40,442 - INFO - 
+LONG  Step 3 - Final Dictionary: {}
+
+2026-01-09 09:47:40,442 - INFO - For LONG Step 4- After sorting: {}
+
+2026-01-09 09:47:40,526 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-09 09:47:40,530 - INFO - SHORT Step 1 - Occurrences of Symbol: {'ZYDUSLIFE': 5, 'LODHA': 4, 'WAAREEENER': 3, 'GODREJPROP': 3, 'PRESTIGE': 3, 'HINDZINC': 2, 'CGPOWER': 2, 'POWERINDIA': 2, 'POLYCAB': 2, 'ADANIENT': 2, 'OBEROIRLTY': 2, 'BHEL': 1, 'SWIGGY': 1, 'IEX': 1, 'ABB': 1, 'OIL': 1}
+2026-01-09 09:47:40,547 - INFO - 
+SHORT Step 2 - Filtered DataFrame:        Symbol  %chng              From CSV  %chng in OI
+14    POLYCAB  -0.47  T20-GL-loosers-FOSec         2.21
+29  ZYDUSLIFE  -0.64  T20-GL-loosers-FOSec         2.68
+
+2026-01-09 09:47:40,678 - INFO - 
+SHORT  Step 3 - Final Dictionary: {'POLYCAB': 2, 'ZYDUSLIFE': 5}
+
+2026-01-09 09:47:40,678 - INFO - For SHORT Step 4- After sorting: {'ZYDUSLIFE': 5, 'POLYCAB': 2}
+
+2026-01-09 09:47:40,742 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,791 - INFO - For file MW-NIFTY-LG-NIFTY_IT.csv: min= -0.46 and max= 1.4 
+2026-01-09 09:47:40,826 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,828 - INFO - For file MW-NIFTY-LG-NIFTY_PSU_BANK.csv: min= -1.08 and max= 1.57 
+2026-01-09 09:47:40,838 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,838 - INFO - For file MW-NIFTY-ST-NIFTY500_HEALTH.csv: min= -2.69 and max= 0.62 
+2026-01-09 09:47:40,847 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,849 - INFO - For file MW-NIFTY-ST-NIFTY_CHEMICALS.csv: min= -1.97 and max= 0.44 
+2026-01-09 09:47:40,858 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,858 - INFO - For file MW-NIFTY-ST-NIFTY_FINSEREXBNK.csv: min= -1.78 and max= 3.46 
+2026-01-09 09:47:40,868 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,870 - INFO - For file MW-NIFTY-ST-NIFTY_FINSRV25_50.csv: min= -1.41 and max= 0.93 
+2026-01-09 09:47:40,885 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,887 - INFO - For file MW-NIFTY-ST-NIFTY_HEALTHCARE.csv: min= -2.06 and max= 0.3 
+2026-01-09 09:47:40,896 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,896 - INFO - For file MW-NIFTY-ST-NIFTY_MEDIA.csv: min= -1.64 and max= 0.52 
+2026-01-09 09:47:40,905 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:40,905 - INFO - For file MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv: min= -2.69 and max= 0.41 
+2026-01-09 09:47:41,010 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,012 - INFO - For file MW-NIFTY-ST-NIFTY_PHARMA.csv: min= -2.05 and max= 0.33 
+2026-01-09 09:47:41,014 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,014 - INFO - For file MW-NIFTY-ST-NIFTY_PVT_BANK.csv: min= -1.41 and max= 0.66 
+2026-01-09 09:47:41,035 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,037 - INFO - For file MW-NIFTY-ST-NIFTY_REALTY.csv: min= -3.58 and max= 1.68 
+2026-01-09 09:47:41,050 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,050 - INFO - For file MW-Pre-Open-Market.csv: min= -1.09 and max= 6.09 
+2026-01-09 09:47:41,059 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,064 - INFO - For file Spurts-in-OI-By-Underlying.csv: min= 0.01 and max= 20.52 
+2026-01-09 09:47:41,075 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,075 - INFO - For file T20-GL-gainers-FOSec.csv: min= 0.35 and max= 3.46 
+2026-01-09 09:47:41,086 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,088 - INFO - For file T20-GL-gainers-FOSecP.csv: min= 0.5 and max= 1.85 
+2026-01-09 09:47:41,095 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,098 - INFO - For file T20-GL-loosers-FOSec.csv: min= -5.19 and max= -0.37 
+2026-01-09 09:47:41,105 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:47:41,105 - INFO - For file T20-GL-loosers-FOSecP.csv: min= -8.78 and max= -0.39 
+2026-01-09 09:47:41,872 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20REALTY HTTP/1.1" 200 701
+2026-01-09 09:47:41,880 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:41,880 - INFO -        Symbol  %chng
+0   SIGNATURE   1.73
+1  PHOENIXLTD  -0.33
+2    ANANTRAJ  -0.47
+3     BRIGADE  -1.32
+4  OBEROIRLTY  -1.49
+2026-01-09 09:47:44,068 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20PVT%20BANK HTTP/1.1" 200 701
+2026-01-09 09:47:44,068 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:44,068 - INFO -        Symbol  %chng
+0     YESBANK   0.66
+1     RBLBANK   0.32
+2  FEDERALBNK   0.31
+3  INDUSINDBK   0.25
+4   KOTAKBANK  -0.28
+2026-01-09 09:47:46,552 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20HEALTHCARE HTTP/1.1" 200 1199
+2026-01-09 09:47:46,554 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:46,561 - INFO -        Symbol  %chng
+0     DRREDDY   0.26
+1       CIPLA   0.22
+2      FORTIS  -0.31
+3    DIVISLAB  -0.33
+4  APOLLOHOSP  -0.36
+2026-01-09 09:47:50,747 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20OIL%20AND%20GAS HTTP/1.1" 200 909
+2026-01-09 09:47:50,747 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:50,753 - INFO -        Symbol %chng
+0    PETRONET  3.80
+1         OIL  2.56
+2        ONGC  1.55
+3  CASTROLIND  0.67
+4        GAIL  0.56
+2026-01-09 09:47:52,960 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20MIDSML%20HLTH HTTP/1.1" 200 1621
+2026-01-09 09:47:52,962 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:52,966 - INFO -        Symbol %chng
+0  NATCOPHARM  0.54
+1  NEULANDLAB  0.39
+2     POLYMED  0.37
+3      PFIZER  0.33
+4    GRANULES  0.05
+2026-01-09 09:47:55,148 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY%20CHEMICALS HTTP/1.1" 200 1185
+2026-01-09 09:47:55,148 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:55,148 - INFO -        Symbol  %chng
+0    SUMICHEM   0.44
+1  COROMANDEL  -0.05
+2  LINDEINDIA  -0.05
+3   BAYERCROP  -0.12
+4    SWANCORP  -0.17
+2026-01-09 09:47:57,638 - DEBUG - https://www.nseindia.com:443 "GET /api/heatmap-symbols?type=Sectoral%20Indices&indices=NIFTY500%20HEALTH HTTP/1.1" 200 2555
+2026-01-09 09:47:57,640 - INFO - Attempt 1: Status 200
+2026-01-09 09:47:57,648 - INFO -        Symbol %chng
+0  NATCOPHARM  0.62
+1  NEULANDLAB  0.39
+2     POLYMED  0.37
+3      PFIZER  0.33
+4     DRREDDY  0.30
+2026-01-09 09:48:05,684 - INFO - 
+
+================ gainers_loosers ===========
+2026-01-09 09:48:05,852 - DEBUG - https://www.nseindia.com:443 "GET /api/live-analysis-stocksTraded HTTP/1.1" 200 142723
+2026-01-09 09:48:06,019 - INFO - Attempt 1: Status 200
+2026-01-09 09:48:06,116 - INFO - Index(['symbol', 'pchange'], dtype='object')
+2026-01-09 09:48:06,118 - INFO - Index(['Symbol', '%chng'], dtype='object')
+2026-01-09 09:48:06,118 - INFO -        Symbol  %chng
+0        IDEA   2.96
+1     ETERNAL   2.87
+2  INDUSTOWER   2.32
+3  HINDCOPPER   1.18
+4        BHEL   2.01
+2026-01-09 09:48:08,187 - INFO - list_of_files in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\09_jan' is ['intraday_logs.log', 'long_stocks.xlsx', 'MW-NIFTY-LG-NIFTY_IT.csv', 'MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv', 'MW-NIFTY-LG-NIFTY_PSU_BANK.csv', 'MW-NIFTY-ST-NIFTY500_HEALTH.csv', 'MW-NIFTY-ST-NIFTY_CHEMICALS.csv', 'MW-NIFTY-ST-NIFTY_FINSEREXBNK.csv', 'MW-NIFTY-ST-NIFTY_FINSRV25_50.csv', 'MW-NIFTY-ST-NIFTY_HEALTHCARE.csv', 'MW-NIFTY-ST-NIFTY_MEDIA.csv', 'MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv', 'MW-NIFTY-ST-NIFTY_PHARMA.csv', 'MW-NIFTY-ST-NIFTY_PVT_BANK.csv', 'MW-NIFTY-ST-NIFTY_REALTY.csv', 'MW-Pre-Open-Market.csv', 'olddata', 'olddata930', 'short_stocks.xlsx', 'Spurts-in-OI-By-Underlying.csv', 'T20-GL-gainers-FOSec.csv', 'T20-GL-gainers-FOSecP.csv', 'T20-GL-loosers-FOSec.csv', 'T20-GL-loosers-FOSecP.csv', 'text_to_display.txt']
+2026-01-09 09:48:08,187 - INFO - 'T20-GL-gainers-FOSecP' and 'T20-GL-loosers-FOSecP' files already present in dir 'E:\inder_dont_delete\utilities_python\share_stock_market\equity_nse\datas\jan_2026\09_jan'
+2026-01-09 09:48:08,187 - INFO - previous_day_gainers_loosers_present bool [True, True]
+2026-01-09 09:48:08,187 - INFO - 
+
+=============   test_oppertunity_in_long_and_short =========== 
+2026-01-09 09:48:08,187 - INFO - 
+
+=============   stocks_for_long =========== 
+2026-01-09 09:48:08,774 - INFO -         Symbol  %chng                       From CSV  %chng in OI
+0   INDUSTOWER   0.70          T20-GL-gainers-FOSecP         4.92
+1   INDUSTOWER   2.32           T20-GL-gainers-FOSec         4.92
+2   INDUSTOWER   4.44             MW-Pre-Open-Market         4.92
+3         BHEL   2.01           T20-GL-gainers-FOSec        10.88
+4         BHEL   2.67             MW-Pre-Open-Market        10.88
+5          IEX   3.51           T20-GL-gainers-FOSec         3.11
+6          IEX   3.46  MW-NIFTY-ST-NIFTY_FINSEREXBNK         3.11
+7     HINDZINC   2.24           T20-GL-gainers-FOSec         5.72
+8          BDL   1.12           T20-GL-gainers-FOSec         2.00
+9          OIL   2.20           T20-GL-gainers-FOSec         2.89
+10         OIL   0.50             MW-Pre-Open-Market         2.89
+11         OIL   2.56  MW-NIFTY-LG-NIFTY_OIL_AND_GAS         2.89
+12         ABB   0.58             MW-Pre-Open-Market         3.65
+13   EICHERMOT   0.41             MW-Pre-Open-Market         2.68
+14  POWERINDIA   0.30             MW-Pre-Open-Market        20.52
+2026-01-09 09:48:08,873 - INFO - 
+
+=============   stocks_for_short =========== 
+2026-01-09 09:48:09,218 - INFO -         Symbol  %chng                      From CSV  %chng in OI
+0         BHEL  -8.78         T20-GL-loosers-FOSecP        10.88
+1     HINDZINC  -6.35         T20-GL-loosers-FOSecP         5.72
+2     HINDZINC  -0.44            MW-Pre-Open-Market         5.72
+3      CGPOWER  -3.68         T20-GL-loosers-FOSecP         7.86
+4      CGPOWER  -4.06          T20-GL-loosers-FOSec         7.86
+5       SWIGGY  -2.76         T20-GL-loosers-FOSecP         3.58
+6   WAAREEENER  -2.59         T20-GL-loosers-FOSecP         3.56
+7   WAAREEENER  -2.61          T20-GL-loosers-FOSec         3.56
+8   WAAREEENER  -0.96            MW-Pre-Open-Market         3.56
+9          IEX  -3.47         T20-GL-loosers-FOSecP         3.11
+10         ABB  -4.96         T20-GL-loosers-FOSecP         3.65
+11  POWERINDIA  -6.10         T20-GL-loosers-FOSecP        20.52
+12  POWERINDIA  -5.12          T20-GL-loosers-FOSec        20.52
+13     POLYCAB  -1.66         T20-GL-loosers-FOSecP         2.21
+14     POLYCAB  -0.48          T20-GL-loosers-FOSec         2.21
+15       LODHA  -2.16         T20-GL-loosers-FOSecP         3.22
+16       LODHA  -2.66          T20-GL-loosers-FOSec         3.22
+17       LODHA  -0.75            MW-Pre-Open-Market         3.22
+18       LODHA  -2.41      MW-NIFTY-ST-NIFTY_REALTY         3.22
+19    ADANIENT  -2.85         T20-GL-loosers-FOSecP         2.32
+20    ADANIENT  -1.46          T20-GL-loosers-FOSec         2.32
+21         OIL  -2.49         T20-GL-loosers-FOSecP         2.89
+22  GODREJPROP  -2.25         T20-GL-loosers-FOSecP         6.59
+23  GODREJPROP  -3.58          T20-GL-loosers-FOSec         6.59
+24  GODREJPROP  -3.25      MW-NIFTY-ST-NIFTY_REALTY         6.59
+25    PRESTIGE  -2.20         T20-GL-loosers-FOSecP         2.59
+26    PRESTIGE  -2.16          T20-GL-loosers-FOSec         2.59
+27    PRESTIGE  -2.04      MW-NIFTY-ST-NIFTY_REALTY         2.59
+28   ZYDUSLIFE  -2.11         T20-GL-loosers-FOSecP         2.68
+29   ZYDUSLIFE  -0.61          T20-GL-loosers-FOSec         2.68
+30   ZYDUSLIFE  -0.56   MW-NIFTY-ST-NIFTY500_HEALTH         2.68
+31   ZYDUSLIFE  -0.52  MW-NIFTY-ST-NIFTY_HEALTHCARE         2.68
+32   ZYDUSLIFE  -0.64      MW-NIFTY-ST-NIFTY_PHARMA         2.68
+33  OBEROIRLTY  -1.62          T20-GL-loosers-FOSec         2.60
+34  OBEROIRLTY  -1.49      MW-NIFTY-ST-NIFTY_REALTY         2.60
+2026-01-09 09:48:09,411 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-09 09:48:09,413 - INFO - LONG Step 1 - Occurrences of Symbol: {'INDUSTOWER': 3, 'OIL': 3, 'BHEL': 2, 'IEX': 2, 'HINDZINC': 1, 'BDL': 1, 'ABB': 1, 'EICHERMOT': 1, 'POWERINDIA': 1}
+2026-01-09 09:48:09,418 - INFO - 
+LONG Step 2 - Filtered DataFrame: Empty DataFrame
+Columns: [Symbol, %chng, From CSV, %chng in OI]
+Index: []
+
+2026-01-09 09:48:09,418 - INFO - 
+LONG  Step 3 - Final Dictionary: {}
+
+2026-01-09 09:48:09,418 - INFO - For LONG Step 4- After sorting: {}
+
+2026-01-09 09:48:09,486 - INFO - 
+
+=============   find_occurance_and_sort_loosers_gainers =========== 
+2026-01-09 09:48:09,486 - INFO - SHORT Step 1 - Occurrences of Symbol: {'ZYDUSLIFE': 5, 'LODHA': 4, 'WAAREEENER': 3, 'GODREJPROP': 3, 'PRESTIGE': 3, 'HINDZINC': 2, 'CGPOWER': 2, 'POWERINDIA': 2, 'POLYCAB': 2, 'ADANIENT': 2, 'OBEROIRLTY': 2, 'BHEL': 1, 'SWIGGY': 1, 'IEX': 1, 'ABB': 1, 'OIL': 1}
+2026-01-09 09:48:09,506 - INFO - 
+SHORT Step 2 - Filtered DataFrame:        Symbol  %chng              From CSV  %chng in OI
+14    POLYCAB  -0.48  T20-GL-loosers-FOSec         2.21
+29  ZYDUSLIFE  -0.61  T20-GL-loosers-FOSec         2.68
+
+2026-01-09 09:48:09,506 - INFO - 
+SHORT  Step 3 - Final Dictionary: {'POLYCAB': 2, 'ZYDUSLIFE': 5}
+
+2026-01-09 09:48:09,506 - INFO - For SHORT Step 4- After sorting: {'ZYDUSLIFE': 5, 'POLYCAB': 2}
+
+2026-01-09 09:48:09,513 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,514 - INFO - For file MW-NIFTY-LG-NIFTY_IT.csv: min= -0.46 and max= 1.4 
+2026-01-09 09:48:09,514 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,514 - INFO - For file MW-NIFTY-LG-NIFTY_OIL_AND_GAS.csv: min= -1.41 and max= 3.8 
+2026-01-09 09:48:09,530 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,531 - INFO - For file MW-NIFTY-LG-NIFTY_PSU_BANK.csv: min= -1.08 and max= 1.57 
+2026-01-09 09:48:09,538 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,538 - INFO - For file MW-NIFTY-ST-NIFTY500_HEALTH.csv: min= -2.69 and max= 0.62 
+2026-01-09 09:48:09,546 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,546 - INFO - For file MW-NIFTY-ST-NIFTY_CHEMICALS.csv: min= -1.97 and max= 0.44 
+2026-01-09 09:48:09,554 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,554 - INFO - For file MW-NIFTY-ST-NIFTY_FINSEREXBNK.csv: min= -1.78 and max= 3.46 
+2026-01-09 09:48:09,562 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,562 - INFO - For file MW-NIFTY-ST-NIFTY_FINSRV25_50.csv: min= -1.41 and max= 0.93 
+2026-01-09 09:48:09,571 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,571 - INFO - For file MW-NIFTY-ST-NIFTY_HEALTHCARE.csv: min= -1.7 and max= 0.26 
+2026-01-09 09:48:09,579 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,579 - INFO - For file MW-NIFTY-ST-NIFTY_MEDIA.csv: min= -1.64 and max= 0.52 
+2026-01-09 09:48:09,590 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,592 - INFO - For file MW-NIFTY-ST-NIFTY_MIDSML_HLTH.csv: min= -2.69 and max= 0.54 
+2026-01-09 09:48:09,596 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,596 - INFO - For file MW-NIFTY-ST-NIFTY_PHARMA.csv: min= -2.05 and max= 0.33 
+2026-01-09 09:48:09,606 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,606 - INFO - For file MW-NIFTY-ST-NIFTY_PVT_BANK.csv: min= -1.41 and max= 0.66 
+2026-01-09 09:48:09,617 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,617 - INFO - For file MW-NIFTY-ST-NIFTY_REALTY.csv: min= -3.25 and max= 1.73 
+2026-01-09 09:48:09,625 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,627 - INFO - For file MW-Pre-Open-Market.csv: min= -1.09 and max= 6.09 
+2026-01-09 09:48:09,633 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,633 - INFO - For file Spurts-in-OI-By-Underlying.csv: min= 0.01 and max= 20.52 
+2026-01-09 09:48:09,633 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,633 - INFO - For file T20-GL-gainers-FOSec.csv: min= 0.35 and max= 3.51 
+2026-01-09 09:48:09,649 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,655 - INFO - For file T20-GL-gainers-FOSecP.csv: min= 0.5 and max= 1.85 
+2026-01-09 09:48:09,658 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,658 - INFO - For file T20-GL-loosers-FOSec.csv: min= -5.12 and max= -0.35 
+2026-01-09 09:48:09,665 - INFO - 
+
+=============   get_min_max_per_from_fetched_stocks_excel =========== 
+2026-01-09 09:48:09,665 - INFO - For file T20-GL-loosers-FOSecP.csv: min= -8.78 and max= -0.39 
