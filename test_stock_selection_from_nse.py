@@ -7,7 +7,7 @@ import shutil
 class TestNSE:
 
     def __init__(self):
-        # (venv) E:\inder_dont_delete>python utilities_python\share_stock_market\equity_nse\test_stock_selection_from_nse.py
+        # (venv) E:\Folder_Path>python utilities_python\share_stock_market\equity_nse\test_stock_selection_from_nse.py
 
         # Library methods
         nse_obj = NSE_Stocks_Selection()

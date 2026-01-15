@@ -3,7 +3,7 @@ import pandas as pd
 from test_stock_selection_from_nse import TestNSE
 from datetime import datetime
 
-# Command: (venv) E:\inder_dont_delete>streamlit run utilities_python\share_stock_market\equity_nse\web_app_nse.py
+# Command: (venv) E:\Folder_Path>streamlit run utilities_python\share_stock_market\equity_nse\web_app_nse.py
 # Open in edge: Local URL: http://localhost:8501
 
 class TestWebApp:
